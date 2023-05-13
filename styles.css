@@ -1,0 +1,192 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FCF0CC; /* A64253 861657 */
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+}
+
+nav {
+  background-color: #A64253;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  padding: 15px;
+  height: 8vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+nav a{
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+nav a:hover{
+  border-bottom: 2px solid white;
+}
+
+header {
+  background-image: url('https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y29kaW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60');
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  color: white;
+}
+
+header h1{
+  font-size: 60px;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+header p{
+  font-size: 25px;
+  margin: 0;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+section{
+  text-align: center;
+  padding: 25px;
+}
+
+header::after{
+  content: '';
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; 
+  opacity: 0.8; 
+}
+
+header * {
+  position: relative;
+  z-index: 1;
+}
+
+section h2{
+  margin: 0;
+  padding: 0;
+}
+
+section p{
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+#games{
+  background-color: red;
+  background-image: url(./imgs/radial-gradient-2474182713.png);
+  height: 100vh;
+}
+
+#games h2{
+  margin-top: 25px;
+}
+
+.games-container{
+  max-width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 810px;
+  margin: 20px auto 0;
+}
+
+.game{
+  max-width: 250px;
+   padding: 0;
+  margin: 10px;
+ }
+
+.game img{
+  max-width: 100%;
+  padding: 0;
+  margin: 10px;
+  height: 150px;
+}
+
+.game p{
+  font-size: 20px;
+  margin-top: 1px;
+}
+
+
+#misc{
+  background-color: red;
+  height: 100vh;
+  background-image: url(./imgs/wp3049572.jpg);
+}
+
+#misc h2{
+  margin-top: 25px;
+}
+
+.misc-container{
+  max-width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 810px;
+  margin: 20px auto 0;
+}
+
+.misc{
+  max-width: 250px;
+   padding: 0;
+  margin: 10px;
+ }
+
+.misc img{
+  max-width: 100%;
+  padding: 0;
+  margin: 10px;
+  height: 150px;
+}
+
+.misc p{
+  font-size: 20px;
+  margin-top: 1px;
+}
+
+
+
+
+.social-ul{
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.social-ul a{
+  color: blue;
+  font-size: 25px;
+  margin: 0 10px;
+}
+
+footer {
+  background-color: #A64253;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
