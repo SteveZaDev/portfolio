@@ -100,7 +100,7 @@ section p{
   margin-top: 25px;
 }
 
-.games-container{
+.container{
   max-width: 100vw;
   display: flex;
   align-items: center;
@@ -110,48 +110,73 @@ section p{
   margin: 20px auto 0;
 }
 
-.game{
+
+
+.item{
   max-width: 250px;
-   padding: 0;
+  padding: 0;
   margin: 10px;
  }
 
-.game img{
+.item img{
   max-width: 100%;
   padding: 0;
   margin: 10px;
   height: 150px;
 }
 
-.game p{
+.item p{
   font-size: 20px;
   margin-top: 1px;
 }
 
 
 #misc{
-  background-color: red;
   height: 100vh;
   background-image: url(./imgs/wp3049572.jpg);
 }
+
+
+#slide{
+  height: 100vh;
+  background-image: url(./imgs/radial-gradient-2474182713.png); 
+
+}
+
+
+#trav{
+  height: 100vh;
+  background-image: url(./imgs/wp3049572.jpg);
+}
+
+
 
 #misc h2{
   margin-top: 25px;
 }
 
-.misc-container{
-  max-width: 100vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 810px;
-  margin: 20px auto 0;
+
+#slide h2{
+  margin-top: 25px;
 }
+
+
+
+#travel h2{
+  margin-top: 25px;
+}
+
+
+
+.intro {
+  width: 85vw;
+  max-width: 500px;
+}
+
 
 .misc{
   max-width: 250px;
-   padding: 0;
+  padding: 0;
   margin: 10px;
  }
 
@@ -190,3 +215,32 @@ footer {
   padding: 10px;
   text-align: center;
 }
+
+
+
+@media (max-width: 750px) {
+  #games {
+    height: 200vh;
+  }
+
+  #misc {
+    height: 150vh;
+  }
+
+
+  #slide {
+    height: 200vh;
+  }
+
+  #travel {
+    height: 200vh;
+  }
+
+
+  nav a{
+    margin-left: 8px;
+    font-size: 12px;
+  }
+
+ }
+
