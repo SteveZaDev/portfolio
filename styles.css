@@ -46,13 +46,13 @@ header {
 }
 
 header h1{
-  font-size: 60px;
+  font-size: 50px;
   margin-bottom: 10px;
   margin-top: 0;
 }
 
 header p{
-  font-size: 25px;
+  font-size: 20px;
   margin: 0;
   margin-bottom: 5px;
   text-align: center;
@@ -237,10 +237,36 @@ footer {
   }
 
 
+  nav {
+    justify-content: space-evenly;
+  }
+
   nav a{
     margin-left: 8px;
-    font-size: 12px;
+    font-size: 14px;
   }
+
+
+  header h1{
+    font-size: 35px;
+    margin-bottom: 10px;
+    margin-top: 0;
+  }
+  
+  header p{
+    font-size: 16px;
+    margin: 0;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+
+  .item{
+    width: 95vw;
+    max-width: 350px;
+    padding: 0;
+    margin: 10px;
+   }
+
 
  }
 
