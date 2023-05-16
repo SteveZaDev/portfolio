@@ -8,6 +8,8 @@ body {
   margin: 0;
 }
 
+
+
 nav {
   background-color: #A64253;
   color: white;
@@ -30,6 +32,7 @@ nav a{
 
 nav a:hover{
   border-bottom: 2px solid white;
+  font-size: 1.25rem;
 }
 
 header {
@@ -43,6 +46,7 @@ header {
   flex-direction: column;
   position: relative;
   color: white;
+  margin-top: 8vh;
 }
 
 header h1{
@@ -60,7 +64,8 @@ header p{
 
 section{
   text-align: center;
-  padding: 25px;
+  height: 100vh;
+  padding: 8vh;
 }
 
 header::after{
@@ -91,7 +96,6 @@ section p{
 }
 
 #games{
-  background-color: red;
   background-image: url(./imgs/radial-gradient-2474182713.png);
   height: 100vh;
 }
@@ -106,14 +110,14 @@ section p{
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 810px;
+  max-width: 910px;
   margin: 20px auto 0;
 }
 
 
 
 .item{
-  max-width: 250px;
+  max-width: 280px;
   padding: 0;
   margin: 10px;
  }
@@ -122,6 +126,7 @@ section p{
   max-width: 100%;
   padding: 0;
   margin: 10px;
+  width: 280px;
   height: 150px;
 }
 
@@ -270,3 +275,6 @@ footer {
 
  }
 
+#coffee{
+  margin-top: 40px;
+}
