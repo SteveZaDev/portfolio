@@ -105,13 +105,12 @@ section p{
 }
 
 .container{
-  max-width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   max-width: 910px;
-  margin: 20px auto 0;
+  margin: 5px auto 0;
 }
 
 
@@ -225,7 +224,7 @@ footer {
 
 @media (max-width: 750px) {
   #games {
-    height: 200vh;
+    height: 250vh;
   }
 
   #misc {
@@ -242,6 +241,11 @@ footer {
   }
 
 
+  section{
+    padding: 8vh 0 0 0;
+  }
+
+
   nav {
     justify-content: space-evenly;
   }
@@ -251,6 +255,14 @@ footer {
     font-size: 14px;
   }
 
+  .container{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    
+  }
 
   header h1{
     font-size: 35px;
@@ -265,15 +277,22 @@ footer {
     text-align: center;
   }
 
+
+
+
+
   .item{
-    width: 95vw;
-    max-width: 350px;
-    padding: 0;
-    margin: 10px;
+    max-width: 100%;
    }
+  
+  .item img{
+    margin: 0;
+    width: 95vw;
+    height: 150px;
+    max-width: 360px;
+  }
 
-
- }
+ } /* End of media query */
 
 #coffee{
   margin-top: 40px;
