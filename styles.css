@@ -91,13 +91,14 @@ section h2{
 
 section p{
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   padding: 0;
 }
 
+
 #games{
   background-image: url(./imgs/radial-gradient-2474182713.png);
-  height: 100vh;
+  height: 145vh;
 }
 
 #games h2{
@@ -119,19 +120,38 @@ section p{
   max-width: 280px;
   padding: 0;
   margin: 10px;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
  }
 
 .item img{
   max-width: 100%;
   padding: 0;
-  margin: 10px;
+  margin: 0;
   width: 280px;
   height: 150px;
 }
 
+
+.item span {
+  position:absolute;
+  top: 0;
+  bottom:0;
+  left: 0;
+  right:0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background: transparent url(./imgs/constr.png) no-repeat;
+  background-position:center;
+}
+
 .item p{
-  font-size: 20px;
+  font-size: 18px;
   margin-top: 1px;
+  max-width: 280px;
+
 }
 
 
@@ -151,6 +171,13 @@ section p{
 #trav{
   height: 100vh;
   background-image: url(./imgs/wp3049572.jpg);
+}
+
+
+#sites{
+  height: 100vh;
+  background-image: url(./imgs/radial-gradient-2474182713.png); 
+
 }
 
 
@@ -290,7 +317,7 @@ footer {
 
   .item{
     max-width: 100%;
-   }
+  }
   
   .item img{
     margin: 0;
@@ -299,8 +326,15 @@ footer {
     max-width: 360px;
   }
 
+  .item p{
+    max-width: 360px;
+  }
+
+
  } /* End of media query */
 
 #coffee{
   margin-top: 40px;
 }
+
+
