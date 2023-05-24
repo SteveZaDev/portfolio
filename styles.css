@@ -28,10 +28,13 @@ nav a{
   color: white;
   margin-left: 20px;
   text-decoration: none;
+  transition-property: all;
+  transition-duration: .55s;
 }
 
 nav a:hover{
-  border-bottom: 2px solid white;
+ /* border-bottom: 2px solid white;*/
+  transform: translateY(-10px);
   font-size: 1.25rem;
 }
 
@@ -122,8 +125,13 @@ section p{
   margin: 10px;
   position: relative;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
+  transition: transform .5s;
  }
+
+ .item:hover{
+  transform: scale(1.1);
+}
+
 
 .item img{
   max-width: 100%;
@@ -258,20 +266,20 @@ footer {
 
 @media (max-width: 750px) {
   #games {
-    height: 250vh;
+    height: 200vh;
   }
 
   #misc {
-    height: 150vh;
+    height: 100vh;
   }
 
 
   #slide {
-    height: 200vh;
+    height: 125vh;
   }
 
   #travel {
-    height: 200vh;
+    height: 125vh;
   }
 
 
