@@ -1,4 +1,3 @@
-//
 console.log("entered")
 
 const observer = new IntersectionObserver((entries) => {
