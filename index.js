@@ -1,16 +1,25 @@
 console.log("entered")
-
-const observer = new IntersectionObserver((entries) => {
+const options = {
+  root: document.body,
+  rootMargin: '0px',
+  threshold: 1
+}
+const observer = new IntersectionObserver((entries, options) => {
   entries.forEach((entry) => {
     console.log(entry)
     if (entry.isIntersecting){
       entry.target.classList.add('show')
       console.log(entry)
     } else {
-      entry.target.classList.remove('show')
+//      entry.target.classList.remove('show')
     }
   })
 })
-const hiddenElements = document.querySelectorAll(".hidden");
+const hiddenElementsLeft = document.querySelectorAll(".hidden-left");
 
-hiddenElements.forEach((el) => observer.observe(el))
+hiddenElementsLeft.forEach((el) => observer.observe(el))
+
+/*const hiddenElementsRight = document.querySelectorAll(".hidden-right");
+
+hiddenElementsRight.forEach((el) => observer.observe(el))
+*/
