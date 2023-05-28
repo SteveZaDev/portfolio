@@ -247,8 +247,9 @@ section p{
 footer {
   background-color: #A64253;
   color: white;
-  padding: 10px;
+  padding: 2px;
   text-align: center;
+  height: 7vh;
 }
 
 
@@ -371,4 +372,7 @@ footer {
   color: rgb(24, 23, 23);
 }
 
-
+.mailto-msg{
+  margin: 4px;
+  font-size: 14px;
+}
