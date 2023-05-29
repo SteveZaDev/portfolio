@@ -404,6 +404,7 @@ footer {
   
   .item{
     max-width: 150px;
+    max-height: 110px;
     padding: 0;
     margin: 10px;
     position: relative;
