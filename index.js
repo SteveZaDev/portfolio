@@ -24,15 +24,18 @@ hiddenElementsLeft.forEach((el) => observer.observe(el))
 hiddenElementsRight.forEach((el) => observer.observe(el))
 */
 
-  mailtoEl = document.querySelector(".mailto-link")
+ // mailtoEl = document.querySelector(".mailto-link")
+ 
 	// Add class to mailto link
 	// Needed to separate the disabling of the default action AND copy email to clipboard
 	$('a[href^=mailto]').addClass('mailto-link');
+  let test = $('a[href^=mailto]');
+  console.log("test = " + test)
 
 	let mailto = $('.mailto-link');
 	let messageCopy = 'Click to copy email address';
 	let messageSuccess = 'Email address copied to clipboard';
-	
+	console.log("mailto = " + mailto)
 //	mailto.append('<span class="mailto-message"></span>');
 //  $('.mailto-message').append(messageCopy);
   
@@ -40,18 +43,29 @@ hiddenElementsRight.forEach((el) => observer.observe(el))
 	
 	// Disable opening your email client. yuk.
 	$('a[href^=mailto]').click(function() {
-		return false; 
+    let href = $(this).attr('href');
+    console.log("disable href = " + href)
+    if (href.indexOf('?') > -1)
+      {
+       // alert("? found inside href of " + href);
+      } else {
+    return false; 
+      }
 	})
 	
 	// On click, get href and remove 'mailto:' from value
 	// Store email address in a variable.
 	mailto.click(function() {
-		let href = $(this).attr('href');
+    console.log("store email")
+    let href = $(this).attr('href');
+    if (href.indexOf('?') > -1){
+
+    } else {
 		let email = href.replace('mailto:', '');
 		copyToClipboard(email);
 		mailtoMsgEl.innerText=(messageSuccess);
 		setTimeout(function() {
-		mailtoMsgEl.innerText=(messageCopy);	;}, 2000); 
+		mailtoMsgEl.innerText=(messageCopy);	;}, 2000); }
 	});
 	
 
