@@ -144,11 +144,13 @@ section p{
   bottom:0;
   left: 0;
   right:0;
-  width: 100%;
-  height: 100%;
+  width: 75%;
+  height: 75%;
   z-index: 10;
   background: transparent url(./imgs/constr.png) no-repeat;
+  opacity: .95;
   background-position:center;
+
 }
 
 .item p{
