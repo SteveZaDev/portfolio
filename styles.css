@@ -92,6 +92,13 @@ section h2{
   padding: 0;
 }
 
+section h3{
+  margin-top: 20px;
+  margin-bottom: 0px;
+  padding: 0;
+}
+
+
 section p{
   margin: 0;
   margin-bottom: 10px;
@@ -136,6 +143,27 @@ section p{
   width: 280px;
   height: 150px;
 }
+
+
+.site-container .item{
+  max-width: 280px;
+  padding: 0;
+  margin: 10px;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: transform .5s;
+  height: 200px;
+ }
+
+
+.site-container .item img{
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+  width: 280px;
+  height: 150px;
+}
+
 
 
 .item span {
@@ -270,7 +298,7 @@ footer {
 
 @media (max-width: 750px) {
   #games {
-    height: 200vh;
+    height: 225vh;
   }
 
   #misc {
@@ -285,6 +313,11 @@ footer {
   #travel {
     height: 125vh;
   }
+
+  #sites {
+    height: 165vh;
+  }
+
 
 
   section{
@@ -437,6 +470,26 @@ footer {
   .item p{
     font-size: .75rem;
   }
+
+
+  .site-container .item{
+    max-width: 150px;
+    height: 110px;
+    margin: 10px;
+
+   }
+  
+  
+  .site-container .item img{
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    width: 150px;
+    height: 65px;
+  }
+  
+
+
 
 
 }
