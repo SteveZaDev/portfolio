@@ -119,15 +119,5 @@ function initHelpModal() {
 
   });
 
-  // When the user clicks anywhere outside of the modal, close it
-  window.addEventListener("click", function (event) {
-    if (event.target == modal) {
-  modal.classList.add("fade-out")
-  setTimeout(function(){
-    modal.style.display = "none";
-    modal.classList.toggle("fade-out")
-   }, 2500);
-      
-    }
-  });
+
 }
