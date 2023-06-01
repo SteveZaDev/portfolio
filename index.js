@@ -15,6 +15,10 @@ const observer = new IntersectionObserver((entries, options) => {
     }
   })
 })
+
+let helpText = `Here I will describe the kind of websites I develop. <a href="mailto:stevezadev@gmail.com?subject=Custom Website" target="_blank">Email me</a> to get things rolling.`
+
+initHelpModal();
 const hiddenElementsLeft = document.querySelectorAll(".hidden-left");
 
 hiddenElementsLeft.forEach((el) => observer.observe(el))
@@ -79,4 +83,51 @@ function copyToClipboard(text) {
     dummy.select();
     document.execCommand('copy');
     document.body.removeChild(dummy);
+}
+
+
+
+function initHelpModal() {
+  const modal = document.getElementById("help-modal");
+ // modal.textContent = "Explanation of this version of WORDLE"
+  // Get the button that opens the modal
+  const btn = document.getElementById("help");
+
+  // Get the <span> element that closes the modal
+  const span = document.getElementById("close-help");
+
+
+  // When the user clicks on the button, open the modal
+  btn.addEventListener("click", function () {
+    console.log("just clicked on help button")
+    modal.style.display = "block";
+    helpEl = document.querySelector(".modal-body")
+    helpEl.innerHTML = helpText
+    const audio = new Audio ("./auds/stats.mp3");
+    audio.play()
+ //   helpEl.requestFullscreen();
+  });
+
+  // When the user clicks on <span> (x), close the modal
+  span.addEventListener("click", function () {
+  //  modal.style.display = "none";
+  modal.classList.toggle("fade-out")
+  setTimeout(function(){
+    modal.style.display = "none";
+    modal.classList.toggle("fade-out")
+   }, 2500);
+
+  });
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.addEventListener("click", function (event) {
+    if (event.target == modal) {
+  modal.classList.add("fade-out")
+  setTimeout(function(){
+    modal.style.display = "none";
+    modal.classList.toggle("fade-out")
+   }, 2500);
+      
+    }
+  });
 }
