@@ -16,7 +16,7 @@ const observer = new IntersectionObserver((entries, options) => {
   })
 })
 
-let helpText = `As a Front End developer I am more in tune with small scale personal sites, like the one you are on right now or the 2 sample sites linked to below or those in the "Travel" section above. <a href="mailto:stevezadev@gmail.com?subject=Custom Website" target="_blank">Email me</a> to find out more and get things rolling.`
+let helpText = `A Front End developer, I deal more with small scale personal sites, like the one you are on right now or the 2 sample sites linked to below or those in the "Travel" section above. <a href="mailto:stevezadev@gmail.com?subject=Custom Website" target="_blank">Email me</a> to find out more and get things rolling.`
 
 initHelpModal();
 const hiddenElementsLeft = document.querySelectorAll(".hidden-left");
