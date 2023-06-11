@@ -202,13 +202,15 @@ section p{
 
 #misc{
   height: 100vh;
-  background-image: url(./imgs/wp3049572.jpg);
+  
+  background-image: url(./imgs/radial-gradient-2474182713.png);
 }
 
 
 #slide{
   height: 100vh;
-  background-image: url(./imgs/radial-gradient-2474182713.png); 
+   
+  background-image: url(./imgs/wp3049572.jpg);
 
 }
 
