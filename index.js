@@ -19,6 +19,7 @@ const observer = new IntersectionObserver((entries, options) => {
 let helpText = `A Front End developer, I deal more with small scale personal sites, like the one you are on right now or the 2 sample sites linked to below or those in the "Travel" section above. <a href="mailto:stevezadev@gmail.com?subject=Custom Website" target="_blank">Email me</a> to find out more and get things rolling.`
 
 initHelpModal();
+initSmoothScroll();
 const hiddenElementsLeft = document.querySelectorAll(".hidden-left");
 
 hiddenElementsLeft.forEach((el) => observer.observe(el))
@@ -120,4 +121,15 @@ function initHelpModal() {
   });
 
 
+}
+
+function initSmoothScroll() {
+  const scrollIcon = document.getElementById("scroll");
+
+
+  // When the user clicks on the button, open the modal
+  scrollIcon.addEventListener("click", function () {
+    console.log("just clicked on scroll icon")
+    window.scrollTo({top: 0, behavior: 'smooth'});
+  });
 }

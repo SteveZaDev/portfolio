@@ -202,29 +202,29 @@ section p{
 
 #misc{
   height: 100vh;
-  
-  background-image: url(./imgs/radial-gradient-2474182713.png);
+  background-image: url(./imgs/wp3049572.jpg);
 }
 
 
 #slide{
   height: 100vh;
-   
   background-image: url(./imgs/wp3049572.jpg);
 
 }
 
 
-#trav{
+#travel{
   height: 100vh;
-  background-image: url(./imgs/wp3049572.jpg);
+  background-image: url(./imgs/radial-gradient-2474182713.png);
+
+  
 }
 
 
 #sites{
   height: 90vh;
   background-image: url(./imgs/radial-gradient-2474182713.png); 
-
+  position: relative;
 }
 
 
@@ -728,4 +728,52 @@ footer {
   animation-name: fade-out;
   animation-duration: 2.5s;
   display: none;
+}
+
+
+
+
+.scrolltop {
+  display: block;
+	width:10%;
+	margin:0 auto;
+  position: absolute;
+	bottom:20px;
+	right:10px;	
+}
+
+.scroll {
+	
+	right:20px;
+	bottom:58px;
+	background:#b2b2b2;
+	background:rgba(178,178,178,0.7);
+	padding:20px;
+	text-align: center;
+  margin: 0 0 0 0;
+  border-radius: 10px;
+	cursor:pointer;
+	transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s; 		
+}
+.scroll:hover {
+	background:rgb(44, 42, 42);
+	transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s; 		
+}
+.scroll:hover .fa {
+	padding-top:-10px;
+}
+.scroll .fa {
+	font-size:30px;
+	margin-top:-5px;
+	margin-left:1px;
+	transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s; 	
 }
