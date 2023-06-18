@@ -319,7 +319,18 @@ let resultObj = {
   guesses: 0
 }
 
-window.location.href = "https://stevezadev.github.io/portfolio/"
+
+// Check date to be set in portfolio - if not todays date - redirect to home page
+// this is current
+let todaysDate =  new Date().toJSON().split("T")[0];
+console.log("todays date = " + todaysDate)
+
+let storedDate = (window.localStorage.getItem('todaysDate'))
+console.log("stored date = " + storedDate)
+
+if (todaysDate != storedDate){
+  window.location.href = "https://stevezadev.github.io/portfolio/"
+}
 
 
 document.addEventListener("DOMContentLoaded", () => {
