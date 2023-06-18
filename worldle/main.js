@@ -319,6 +319,9 @@ let resultObj = {
   guesses: 0
 }
 
+window.location.href = "https://stevezadev.github.io/portfolio/"
+
+
 document.addEventListener("DOMContentLoaded", () => {
     initPreferencesModal();
     initCategories();
