@@ -89,6 +89,14 @@ function copyToClipboard(text) {
 
 
 function initHelpModal() {
+  // Write todays date to localstorage - other pages will have to check to see if //// this is current
+  let todaysDate =  new Date().toJSON().split("T")[0];
+// Output: "2019-10-04"
+console.log(todaysDate)
+
+window.localStorage.setItem('todaysDate', todaysDate)
+
+
   const modal = document.getElementById("help-modal");
  // modal.textContent = "Explanation of this version of WORDLE"
   // Get the button that opens the modal
