@@ -2,7 +2,8 @@
 @import url(https://fonts.googleapis.com/css?family=Muli);
 // Set sizing variables
 // Set sizing variables
-$box-dimension: 3.25vw;
+$box-dimension: 3.05vw;
+$mobile-portrait-box-dimension: 3.05vw;
 $expanded-dimension: calc(#{$box-dimension} * 3.14);
 $f-block--padding-left: calc((2 * #{$box-dimension}) + 2vw + 6px);
 $f-block--padding-right: calc(#{$box-dimension} + 2vw + 2px);
@@ -56,18 +57,21 @@ body {
 }
 
 .full-table {
+  display: flex;
+  flex-direction: column;
   margin: 0 auto 20vh;
   width: 100vw;
   height: 100%;
   position: relative;
   overflow: hidden;
+  column-gap: 5px;
 }
 
 .main-table {
   display: flex;
   align-items: flex-end;
   justify-content: space-around;
-  padding: 2vw;
+  padding: 1vw;
   overflow: hidden;
 }
 
@@ -291,17 +295,31 @@ body {
   }
   #board-container{
     height: 165px;
-    background-color: blue;
+
   }
   #game{
-    background-color: red;
+  
     width: 100%;
     max-width: 750px;
     height: 200px;
     display: flex;
     flex-direction: column;
   }
+
+  #board-container{
+    max-height: 55vh;
+  }
   
+
+  .element {
+
+    width: $mobile-portrait-box-dimension*1.5;
+    height: $mobile-portrait-box-dimension*.85;
+
+  }
+  
+
+
 }
 
 
@@ -385,11 +403,15 @@ body {
 #container{
   display: flex;
   background: rgb(75,29,91, .41);
- /* background: linear-gradient(79deg, rgba(125,29,251,1) 0%, rgba(29,74,251,0.37857141147474616) 75%, rgba(137,20,220,1) 100%); */
+  background: linear-gradient(79deg, rgba(125,29,251,1) 0%, rgba(29,74,251,0.37857141147474616) 75%, rgba(137,20,220,1) 100%);
+ /* background: url("https://images.unsplash.com/photo-1595500381751-d940898d13a0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGNoZW1pc3RyeXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60");*/
   height: 95vh;
   align-items: center;
   justify-content: top;
   flex-direction: column;
+  background-size: cover;
+  background-size: stretch;
+  background-position: top;
 }
 header {
   display: flex;
@@ -505,7 +527,7 @@ h2{
   display: flex;
   justify-content: center;
   width: 98%;
-  margin: 0 auto 8px;
+  margin: 0 auto 5px;
   touch-action: manipulation;
 }
 
