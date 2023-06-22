@@ -739,6 +739,11 @@ const colors = {
   'actinoid': '#FF00C6'
 }
 
+
+
+let viewHelpText = `Welcome to ELEMENTLE! Please read the help(?) for info and tips on game play. This is currently a work in progress but you can still give it a try. There are at present only 3 elements in this pre beta version (Hydrogen, Lithium and Sodium). Eventually the goal will be to complete the full periodic table.`
+initViewHelpModal();
+
 // Viewport width
 const viewportSize = $('.full-table').width()
 
@@ -781,6 +786,33 @@ $('.element').each(function() {
 
 console.log("element table length  = " + elementsArray.length);
 
+// June 22 - add code to getitem array of correct elements from localstorage and remove those from the active elements to guess array
+let correctElements = JSON.parse(window.localStorage.getItem('elements'));
+console.log("element table length1a  = " + elementsArray.length);
+
+if (correctElements){
+    correctElementsArray = JSON.parse(window.localStorage.getItem('elements'));
+    console.log(correctElementsArray.length)
+    for (i=0; i<correctElementsArray.length; i++){
+      console.log("correct element = " + correctElementsArray[i])
+      for (j=0; j<elementsArray.length; j++) {
+        console.log("element name  = " + elementsArray[j].elName)
+      }
+
+      const index = elementsArray.findIndex(object => {
+        return object.elName.toUpperCase() === correctElementsArray[i];
+      });
+      
+      fillPeriodicTable(elementsArray[index].elNum, elementsArray[index].elSym)
+      console.log("index of correct element = " + index) 
+      elementsArray.splice(index,1);
+    }
+}
+console.log("element table length2  = " + elementsArray.length);
+
+
+
+
 
 // Events for mobile screen sizes
 //if (viewportSize <= 760) {
@@ -812,7 +844,7 @@ console.log("element table length  = " + elementsArray.length);
 
 // Events for larger screen size
 //if (viewportSize > 760) {
-  if (viewportSize > 700) {
+  if (viewportSize > 300) {
   $('.element').removeClass('element__expanded')
   // Helpful tip on what the corner number is for large screens
   $('.number').attr('title', 'Atomic Number')
@@ -820,6 +852,7 @@ console.log("element table length  = " + elementsArray.length);
   // Hover effects only large screens can enjoy
   $('.element').hover(
     function() {
+      console.log("checking hoverableness")
       if ($(this).hasClass("hoverable")){
 
       } else {
@@ -838,7 +871,7 @@ console.log("element table length  = " + elementsArray.length);
       $('.group-label').text(elementCategory)
         // Make the background of the category label box the color of the hovered category
       $('.group-label').css('background-color', groupLabelColor)
-      $('.group-label').css('font-size', '20px')
+      $('.group-label').css('font-size', '14px')
   //    $("#"+styleTarget).css({'font-size':'"+$(this).val()+"px'});
          // Add some attributes to the element to be used later
        $(this).attr({
@@ -1351,7 +1384,25 @@ allElements.forEach((element) => {
       setTimeout(function(){
         showPeriodicTable(wordleElNum, wordleElSym);
     }, 4500);
+    // June 22 - add code to update array of correct elements in localstorage 
     elementsArray.splice(randomWordle,1);
+    let correctElementsArrayTemp = JSON.parse(window.localStorage.getItem('elements'));
+    if (correctElementsArrayTemp){
+        let correctElementsArray = JSON.parse(window.localStorage.getItem('elements'));
+        correctElementsArray.push(wordle);
+        window.localStorage.setItem('elements', JSON.stringify(correctElementsArray));
+    } else {
+      let correctElementsArray = [];
+      correctElementsArray[0] = wordle;
+      window.localStorage.setItem('elements', JSON.stringify(correctElementsArray));
+    }
+
+
+
+
+
+
+
       resultObj.guesses = guessedWordCount;
       let resultsArrayTemp = JSON.parse(window.localStorage.getItem('resultsEl'));
       if (resultsArrayTemp){
@@ -2637,7 +2688,8 @@ function showPeriodicTable(elNum, elSym){
 
 
 
-  const groupLabelColor = colors[categoryColorSelector]
+  const groupLabelColor = 'linear-gradient(65deg, ' + colors[categoryColorSelector] + ', antiquewhite';
+ 
 
 
 
@@ -2655,8 +2707,8 @@ function showPeriodicTable(elNum, elSym){
 // $('.group-label').text("test")
   // Make the background of the category label box the color of the hovered category
 // $('.group-label').css('background-color', groupLabelColor)
-$('.group-label').css('background-color', groupLabelColor)
-$('.group-label').css('font-size', '20px')
+$('.group-label').css('background', groupLabelColor)
+$('.group-label').css('font-size', '14px')
 
 
 
@@ -2666,3 +2718,42 @@ $('.group-label').css('font-size', '20px')
 
 
 } 
+
+function fillPeriodicTable(elNum, elSym){
+  elNum = 'no'+elNum;
+  console.log("entered fillPeriodic el num = " + elNum)
+
+  $('.' + elNum).css({ opacity: 1 });
+  let categoryColorSelector =   $('.' + elNum).parent().attr('class').replace(/element /, '');
+  $('.' + elNum).parent().addClass("hoverable");
+
+  const elementSymbol = elSym;
+  const elementName = elementInfo[elementSymbol]['name']
+  const elementCategory = elementName + " is a(n) " +
+   elementInfo[elementSymbol]['category'] +  " Discovered by " +   elementInfo[elementSymbol]['discoverer'] + " in " + elementInfo[elementSymbol]['discdate']
+ 
+
+
+} 
+
+
+function initViewHelpModal() {
+  const modal = document.getElementById("view-help-modal");
+  const span = document.getElementById("close-view-help");
+
+    modal.style.display = "block";
+    helpEl = document.getElementById("view-help")
+    helpEl.innerHTML = viewHelpText
+ 
+  // When the user clicks on <span> (x), close the modal
+  span.addEventListener("click", function () {
+  modal.classList.toggle("fade-out")
+  setTimeout(function(){
+    modal.style.display = "none";
+    modal.classList.toggle("fade-out")
+   }, 2500);
+
+  });
+
+
+}
