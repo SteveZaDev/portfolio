@@ -5,11 +5,9 @@ const elementInfo = {
     category: "Non-metal",
     num: 1,
     discdate: 1766,
-    discoverer: "Henry Cavendish"
-      // date discovered
-      // discoverer
+    discoverer: "Henry Cavendish",
+    intfact: "Hydrogen is the lightest element. It is colorless, odorless, tasteless and is highly combustible."
       // unexpected symbol
-      // interesting facts
   },
   He: {
     name: "Helium",
@@ -17,7 +15,8 @@ const elementInfo = {
     category: "Noble Gas",
     num: 2,
     discdate: 1868,
-    discoverer: "Pierre Janssen"
+    discoverer: "Pierre Janssen",
+    intfact: "Helium's boiling point is the lowest among all the elements, and it does not have a melting point at standard pressure."
   },
   Li: {
     name: "Lithium",
@@ -25,51 +24,71 @@ const elementInfo = {
     category: "Alkali Metal",
     num: 3,
     discdate: 1817,
-    discoverer: "Johan August Arfvedson"
+    discoverer: "Johan August Arfvedson",
+    intfact: "Lithium is a soft, silvery-white alkali metal. Under standard conditions, it is the least dense metal and the least dense solid element."
   },
   Be: {
-    name: "Berylium",
+    name: "Beryllium",
     radioactive: false,
     category: "Alkaline Earth Metal",
     num: 4,
     discdate: 1797,
-    discoverer: "Nicholas Louis"
+    discoverer: "Nicholas Louis",
+    intfact: "Beryllium is steel-gray, strong, lightweight and brittle. It is a divalent element that occurs naturally only in combination with other elements to form minerals. Notable gemstones high in beryllium include beryl (aquamarine, emerald, red beryl) and chrysoberyl."
   },
   B: {
     name: "Boron",
     radioactive: false,
     category: "Metalloid",
-    num: 5
+    num: 5,
+    discdate: 0000,
+    discoverer: "?????",
+    intfact: ""
   },
   C: {
     name: "Carbon",
     radioactive: false,
     category: "Non-metal",
-    num: 6
+    num: 6,
+    discdate: 0000,
+    discoverer: "?????",
+    intfact: ""
   },
   N: {
     name: "Nitrogen",
     radioactive: false,
     category: "Non-metal",
-    num: 7
+    num: 7,
+    discdate: 0000,
+    discoverer: "?????",
+    intfact: ""
   },
   O: {
     name: "Oxygen",
     radioactive: false,
     category: "Non-metal",
-    num: 8
+    num: 8,
+    discdate: 0000,
+    discoverer: "?????",
+    intfact: ""
   },
   F: {
     name: "Flourine",
     radioactive: false,
     category: "Halogen",
-    num: 9
+    num: 9,
+    discdate: 0000,
+    discoverer: "?????",
+    intfact: ""
   },
   Ne: {
     name: "Neon",
     radioactive: false,
     category: "Noble Gas",
-    num: 10
+    num: 10,
+    discdate: 0000,
+    discoverer: "?????",
+    intfact: ""
   },
   Na: {
     name: "Sodium",
@@ -77,79 +96,110 @@ const elementInfo = {
     category: "Alkali Metal",
     num: 11,
     discdate: 1807,
-    discoverer: "Sir Humphry Davy"
+    discoverer: "Sir Humphry Davy",
+    intfact: "Sodium is the sixth most abundant element in the Earth's crust and exists in numerous minerals such as feldspars, sodalite, and halite."
   },
   Mg: {
     name: "Magnesium",
     radioactive: false,
     category: "Alkaline Earth Metal",
-    num: 12
+    num: 12,
+    discdate: 0000,
+    discoverer: "?????",
+    intfact: ""
   },
   Al: {
     name: "Aluminium",
     radioactive: false,
     category: "Post-transition Metal",
-    num: 13
+    num: 13,
+    discdate: 0000,
+    discoverer: "?????",
+    intfact: ""
   },
   Si: {
     name: "Silicon",
     radioactive: false,
     category: "Metalloid",
-    num: 14
+    num: 14,
+    discdate: 0000,
+    discoverer: "?????",
+    intfact: ""
   },
   P: {
     name: "Phosphorous",
     radioactive: false,
     category: "Non-metal",
-    num: 15
+    num: 15,
+    discdate: 0000,
+    discoverer: "?????",
+    intfact: ""
   },
   S: {
     name: "Sulfur",
     radioactive: false,
     category: "Non-metal",
-    num: 16
+    num: 16,
+    discdate: 0000,
+    discoverer: "?????",
+    intfact: ""
   },
   Cl: {
     name: "Chlorine",
     radioactive: false,
     category: "Halogen",
-    num: 17
+    num: 17,
+    discdate: 0000,
+    discoverer: "?????",
+    intfact: ""
   },
   Ar: {
     name: "Argon",
     radioactive: false,
     category: "Noble Gas",
-    num: 18
+    num: 18,
+    discdate: 0000,
+    discoverer: "?????",
+    intfact: ""
   },
   K: {
     name: "Potassium",
     radioactive: false,
     category: "Alkali Metal",
-    num: 19
+    num: 19,
+    discdate: 0000,
+    discoverer: "?????",
+    intfact: ""
   },
   Ca: {
     name: "Calcium",
     radioactive: false,
     category: "Alkaline Earth Metal",
-    num: 20
+    num: 20,
+    discdate: 0000,
+    discoverer: "?????",
+    intfact: ""
   },
   Sc: {
     name: "Scandium",
     radioactive: false,
     category: "Transition Metal",
-    num: 21
+    num: 21,
+    discdate: 0000,
+    discoverer: "?????",
+    intfact: ""
   },
   Ti: {
     name: "Titanium",
     radioactive: false,
     category: "Transition Metal",
-    num: 221
+    num: 22
   },
   V: {
     name: "Vanadium",
     radioactive: false,
     category: "Transition Metal",
-    num: 231
+    num: 23
   },
   Cr: {
     name: "Chromium",
@@ -741,7 +791,7 @@ const colors = {
 
 
 
-let viewHelpText = `Welcome to ELEMENTLE! Please read the help(?) for info and tips on game play. This is currently a work in progress but you can still give it a try. There are at present only 3 elements in this pre beta version (Hydrogen, Lithium and Sodium). Eventually the goal will be to complete the full periodic table.`
+let viewHelpText = `Welcome to ELEMENTLE! Please read the help(?) for info and tips on game play. This Beta version is best viewed on a desktop.`
 initViewHelpModal();
 
 // Viewport width
@@ -775,7 +825,6 @@ $('.element').each(function() {
   elementObj.elSym = elementSymbol;
   if (i<3){
     elementsArray.push(elementObj);
-    console.log("i = " + i)
     i++;
   }
 })
@@ -784,31 +833,26 @@ $('.element').each(function() {
 
 
 
-console.log("element table length  = " + elementsArray.length);
 
 // June 22 - add code to getitem array of correct elements from localstorage and remove those from the active elements to guess array
 let correctElements = JSON.parse(window.localStorage.getItem('elements'));
-console.log("element table length1a  = " + elementsArray.length);
+
 
 if (correctElements){
     correctElementsArray = JSON.parse(window.localStorage.getItem('elements'));
-    console.log(correctElementsArray.length)
+
     for (i=0; i<correctElementsArray.length; i++){
-      console.log("correct element = " + correctElementsArray[i])
-      for (j=0; j<elementsArray.length; j++) {
-        console.log("element name  = " + elementsArray[j].elName)
-      }
 
       const index = elementsArray.findIndex(object => {
         return object.elName.toUpperCase() === correctElementsArray[i];
       });
       
       fillPeriodicTable(elementsArray[index].elNum, elementsArray[index].elSym)
-      console.log("index of correct element = " + index) 
+ 
       elementsArray.splice(index,1);
     }
 }
-console.log("element table length2  = " + elementsArray.length);
+
 
 
 
@@ -862,15 +906,16 @@ console.log("element table length2  = " + elementsArray.length);
 
       const elementSymbol = $(this).children('.symbol').text()
       const elementName = elementInfo[elementSymbol]['name']
-      const elementCategory = elementInfo[elementSymbol]['category'] +  " Discovered by " +   elementInfo[elementSymbol]['discoverer'] + " in " + elementInfo[elementSymbol]['discdate']
+      const elementCategory = elementInfo[elementSymbol]['category'] +  " Discovered by " +   elementInfo[elementSymbol]['discoverer'] + " in " + elementInfo[elementSymbol]['discdate'] + ". " + elementInfo[elementSymbol]['intfact']
       let categoryColorSelector = $(this).attr('class').replace(/element /, '')
       categoryColorSelector = categoryColorSelector.replace(/ hoverable/, '')
-      const groupLabelColor = colors[categoryColorSelector]
+   //   const groupLabelColor = colors[categoryColorSelector]
+      const groupLabelColor = 'linear-gradient(65deg, ' + colors[categoryColorSelector] + ', antiquewhite';
       const isRadioactive = elementInfo[elementSymbol]['radioactive']
         // Display hovered element's category name under the title
       $('.group-label').text(elementCategory)
         // Make the background of the category label box the color of the hovered category
-      $('.group-label').css('background-color', groupLabelColor)
+      $('.group-label').css('background', groupLabelColor)
       $('.group-label').css('font-size', '14px')
   //    $("#"+styleTarget).css({'font-size':'"+$(this).val()+"px'});
          // Add some attributes to the element to be used later
@@ -884,6 +929,7 @@ console.log("element table length2  = " + elementsArray.length);
       // Remove the group label box and set its background color back to the page's background color
       $('.group-label').text('')
       $('.group-label').css('background-color', colors['background'])
+      $('.group-label').css('background', colors['background'])
       $('.group-label').css('background-color', colors['red'])
     }
   )
@@ -912,7 +958,7 @@ if ($(this).hasClass("hoverable")){
       while (urlNumber.length < 3) {
         urlNumber.unshift('0')
       }
-      return `http://periodicvideos.com/videos/${urlNumber.join('')}.htm`
+      return `https://periodicvideos.com/videos/${urlNumber.join('')}.htm`
     }
     // Open the video for this element in a new tab if you want to watch it
  // if (confirm(`${elementName} video?`)) {
@@ -978,7 +1024,7 @@ const audios=[ {name: "default",
               }
              ]
 
-let helpText = `"ELEMENTLE" is designed to help you learn about the Elements. Each time you play, one of the 118 elements will be randomly selected and you will, in Wordle fashion, have to determine what that element is. But there is a lot more to it than that. As you figure out each game, and get the correct answer, you will be taken to a layout of the periodic table. All of the elements that you have figured out will show with their number and symbol. Positions for all the other elements will show up, but only as blank color coded boxes. These colors correspond to groupings of elements. For demo purposes, only 3 elements will come into play. They are Hydrogen Lithium or Sodium. So all the answers will be one of those elements. When correct, you will automatically be taken to the Periodic table. Hover over any of the revealed elements and additional info will be displayed. Click on the element and a link to a rather involved video about that element will show. The table icon in the upper right of the screen will toggle between the Periodic Table and the Game play display.          
+let helpText = `"ELEMENTLE" is designed to help you learn about the Elements. Each time you play, one of the 118 elements will be randomly selected and you will, in Wordle fashion, have to determine what that element is. But there is a lot more to it than that. As you figure out each game, and get the correct answer, you will be taken to a layout of the periodic table. All of the elements that you have figured out will show with their number and symbol. Positions for all the other elements will show up, but only as blank color coded boxes. These colors correspond to groupings of elements. When correct, you will automatically be taken to the Periodic table. Hover over any of the revealed elements and additional info will be displayed. Click on the element and a link to a rather involved video about that element will show. The table icon in the upper right of the screen will toggle between the Periodic Table and the Game play display.          
 TIPS - 
 ----------------
 ----------------
@@ -1156,10 +1202,10 @@ allElements.forEach((element) => {
   createSquares();
   // Check to see if keyboard click event listener has already been set via the first game of the session  
   if (!keyboardClicks){
-    console.log("about to call addKeyboard")
+
     addKeyboardClicks();
     document.addEventListener('keydown', function(event) {
-      console.log ("key pressed was " + event.key)
+
       handleKeystroke(event.key)
       });
   }
@@ -1176,15 +1222,13 @@ allElements.forEach((element) => {
   }
 
   function updateGuessedLetters(letter){
-    console.log("updateGuessedLetter letter = " + letter)
     const currentWordArr = getCurrentWordArr()
-    console.log('current array = ' + currentWordArr)
-    console.log("numofLetters = " + numofLetters )
+
     if (currentWordArr && currentWordArr.length < numofLetters){
       currentWordArr.push(letter)
       const availableSpaceEl = document.getElementById(availableSpace)
       availableSpace++;
-      console.log("availableSpace = " + availableSpace)
+
       availableSpaceEl.textContent = letter;
     }
   }
@@ -1247,7 +1291,7 @@ allElements.forEach((element) => {
 
 
   function handleSubmitWord(){
-    console.log("entered handlesubmitword ")
+
     const currentWordArr = getCurrentWordArr();
     const guessedWord = currentWordArr.join("");
     if (guessedWord.length !== numofLetters){
@@ -1262,18 +1306,16 @@ allElements.forEach((element) => {
     const guess = [];
   
     currentWordArr.forEach(tile => {
-      console.log("pushing letter onto guess array - letter = " + tile)
+ 
     //  guess.push({letter: tile, color: 'dontknow'});
       guess.push({letter: tile, color: 'incorrect-letter'});
     })
 
-    console.log("");
-    console.log("");
-    console.log("About to loop thru to look for Greys")
+
     guess.forEach(guess => {
       if (!checkWordle.includes(guess.letter.toUpperCase())){
         guess.color = 'incorrect-letter'
-        console.log ("set grey overlay")
+
         }
     })
 
@@ -1281,29 +1323,18 @@ allElements.forEach((element) => {
 
 
 
-    console.log("About to loop thru to look for Greens")
+
     guess.forEach((guess, index) => {
-      console.log("guess letter = " + guess.letter + "   wordle letter = " + wordle[index])
+    
       if (guess.letter == wordle[index].toLowerCase()){
         guess.color = 'correct-letter-in-place'
-   //     console.log("guess letter2 = " + guess.letter + "   wordle letter = " + wordle[index])
-        console.log ("set green overlay")
+
         checkWordle = checkWordle.replace(guess.letter.toUpperCase(), '')
-        console.log ("guess array = " + guess + " checkWordle = " + checkWordle)
-        console.log (" ")
+ 
       }
     })
 
-    console.log("COLORS AFTER GREEN LOGIC")
-    guess.forEach(guess => {
-      console.log("guess letter = " + guess.letter);
-      console.log("guess color = " + guess.color);
-    })
 
-
-    console.log(" ");
-    console.log(" ");
-    console.log("About to loop thru to look for Yellows")
     guess.forEach(guess => {
       console.log("guess letter = " + guess.letter);
       if (checkWordle.includes(guess.letter.toUpperCase())){
@@ -2697,8 +2728,7 @@ function showPeriodicTable(elNum, elSym){
   const elementSymbol = elSym;
   const elementName = elementInfo[elementSymbol]['name']
   const elementCategory = elementName + " is a(n) " +
-   elementInfo[elementSymbol]['category'] +  " Discovered by " +   elementInfo[elementSymbol]['discoverer'] + " in " + elementInfo[elementSymbol]['discdate']
- 
+ elementInfo[elementSymbol]['category'] +  " Discovered by " +   elementInfo[elementSymbol]['discoverer'] + " in " + elementInfo[elementSymbol]['discdate'] + ". " + elementInfo[elementSymbol]['intfact']
 
 
     

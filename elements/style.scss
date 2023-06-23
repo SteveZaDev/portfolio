@@ -63,7 +63,10 @@ body {
 
 .group-label {
   display: none;
+  box-sizing: border-box;
   transition: 75ms ease-out;
+  padding: 1vw;
+  line-height: 16px;
 }
 
 .full-table {
@@ -204,7 +207,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 29vw;
-  width: 42%;
+  width: 72%;
   font-size: 7.5vw;
   border-radius: 3vw;
 }
@@ -348,34 +351,42 @@ body {
 
 .alkaline-earth-metal {
   background-color: $alkaline-earth-metal--color;
+  background: linear-gradient($alkaline-earth-metal--color, $alkaline-earth-metal--color2);
 }
 
 .transition-metal {
   background-color: $transition-metal--color;
+  background: linear-gradient($transition-metal--color, $transition-metal--color2);
 }
 
 .metalloid {
   background-color: $metalloid--color;
+  background: linear-gradient($metalloid--color, $metalloid--color2);
 }
 
 .post-transition-metal {
   background-color: $post-transition-metal--color;
+  background: linear-gradient($post-transition-metal--color, $post-transition-metal--color2);
 }
 
 .halogen {
   background-color: $halogen--color;
+  background: linear-gradient($halogen--color, $halogen--color2);
 }
 
 .noble-gas {
   background-color: $noble-gas--color;
+  background: linear-gradient($noble-gas--color, $noble-gas--color2);
 }
 
 .rare-earth {
   background-color: $lanthanoid--color;
+  background: linear-gradient($lanthanoid--color, $lanthanoid--color2);
 }
 
 .actinoid {
   background-color: $actinoid--color;
+  background: linear-gradient($actinoid--color, $actinoid--color2);
 }
 // -------END OF ELEMENTS CSS-------
 // -------END OF ELEMENTS CSS-------
