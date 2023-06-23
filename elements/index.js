@@ -823,7 +823,7 @@ $('.element').each(function() {
   elementObj.elName = elementName;
   elementObj.elNum = elementNum;
   elementObj.elSym = elementSymbol;
-  if (i<3){
+  if (i<120){
     elementsArray.push(elementObj);
     i++;
   }
@@ -2786,4 +2786,26 @@ function initViewHelpModal() {
   });
 
 
+}
+
+
+
+// June 24 experimenting with doubletap detection
+document.body.addEventListener('touchend', detectDoubleTapClosure(), { passive: false });
+function detectDoubleTapClosure() {
+  let lastTap = 0;
+  let timeout;
+  return function detectDoubleTap(event) {
+    const curTime = new Date().getTime();
+    const tapLen = curTime - lastTap;
+    if (tapLen < 500 && tapLen > 0) {
+      console.log('Double tapped!');
+      event.preventDefault();
+    } else {
+      timeout = setTimeout(() => {
+        clearTimeout(timeout);
+      }, 500);
+    }
+    lastTap = curTime;
+  };
 }

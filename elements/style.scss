@@ -232,7 +232,7 @@ body {
     justify-content: center;
     height: 6vw;
     width: 42%;
-    font-size: 3.5vw;
+    font-size: 6.5vw;
     border-radius: 3vw;
   }
 
@@ -314,14 +314,16 @@ body {
   
     width: 100%;
     max-width: 750px;
+    max-height: 85vh;
     height: 200px;
     display: flex;
     flex-direction: column;
+   
   }
 
   #board-container{
-    max-height: 55vh;
-  }
+    max-height: 300px;
+   }
   
 
   .element {
@@ -519,6 +521,7 @@ h2{
   align-items: center;
   flex-grow: 1;
   overflow: hidden;
+  max-height: 65vh;
 }
 
 #board{
@@ -1148,4 +1151,29 @@ hr{
 
 textarea{
   height: 90px;
+}
+
+
+
+
+
+.number {
+  font-size: 1.25vw;
+}
+
+.symbol {
+  font-size: 1.40vw;
+}
+
+
+
+@media (max-width: 380px) {
+  .number {
+    font-size: 2.45vw;
+  }
+  
+  .symbol {
+    font-size: 2.50vw;
+  }
+
 }
