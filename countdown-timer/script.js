@@ -26,6 +26,7 @@ let defaultOccasions = [
     landscapeImg:  './img/christmas.jpg',
     portraitImg:  './img/christmas.jpg',
     color: 'white'},
+    /*
     {occ: "Vernal Equinox 2023",
     date: "Mar 20, 2023",
     time: 16,
@@ -34,6 +35,7 @@ let defaultOccasions = [
     landscapeImg:  './img/equinox.jpg',
     portraitImg:  './img/equinox.jpg',
     color: 'white'},
+    */
     {occ: "Summer Solstice 2023",
     date: "Jun 21, 2023",
     time: 10,
