@@ -41,54 +41,54 @@ const elementInfo = {
     radioactive: false,
     category: "Metalloid",
     num: 5,
-    discdate: 0000,
-    discoverer: "?????",
-    intfact: ""
+    discdate: 1807,
+    discoverer: "Sir Humphry Davy",
+    intfact: "In its crystalline form it is a brittle, dark, lustrous metalloid; in its amorphous form it is a brown powder."
   },
   C: {
     name: "Carbon",
     radioactive: false,
     category: "Non-metal",
     num: 6,
-    discdate: 0000,
-    discoverer: "?????",
-    intfact: ""
+    discdate: 1722,
+    discoverer: "Antoine Ferchault de Réaumur",
+    intfact: "Carbon is the 15th most abundant element in the Earth's crust, and the fourth most abundant element in the universe by mass after hydrogen, helium, and oxygen."
   },
   N: {
     name: "Nitrogen",
     radioactive: false,
     category: "Non-metal",
     num: 7,
-    discdate: 0000,
-    discoverer: "?????",
-    intfact: ""
+    discdate: 1772,
+    discoverer: "Daniel Rutherford",
+    intfact: "Nitrogen was discovered as a novel element by Daniel Rutherford (1722) and he termed it as the noxious air. He found that it was that component of the air that did not support combustion."
   },
   O: {
     name: "Oxygen",
     radioactive: false,
     category: "Non-metal",
     num: 8,
-    discdate: 0000,
-    discoverer: "?????",
-    intfact: ""
+    discdate: 1774,
+    discoverer: "Joseph Priestly",
+    intfact: "In 1774, Carl Wilhelm Scheele and Joseph Priestley independently discovered oxygen, and named it “fire air” and “dephlogisticated air”, respectively due to its role in combustion."
   },
   F: {
     name: "Flourine",
     radioactive: false,
     category: "Halogen",
     num: 9,
-    discdate: 0000,
-    discoverer: "?????",
-    intfact: ""
+    discdate: 1810,
+    discoverer: "Andre-Marie Ampere",
+    intfact: "The high reactivity and corrosive nature of fluorine led to delay in the discovery and isolation of fluorine as a distinct element. Several early experiments with fluorine caused serious health hazards to the scientist."
   },
   Ne: {
     name: "Neon",
     radioactive: false,
     category: "Noble Gas",
     num: 10,
-    discdate: 0000,
-    discoverer: "?????",
-    intfact: ""
+    discdate: 1898,
+    discoverer: " Morris W. Travers and Sir William Ramsay",
+    intfact: "Ramsay discovered it by chilling an air sample until it became a liquid then capturing the gases released from the liquid as it was warmed. Neon stood out because of its brilliant red light under spectroscopic discharge."
   },
   Na: {
     name: "Sodium",
@@ -104,45 +104,45 @@ const elementInfo = {
     radioactive: false,
     category: "Alkaline Earth Metal",
     num: 12,
-    discdate: 0000,
-    discoverer: "?????",
-    intfact: ""
+    discdate: 1750,
+    discoverer: "Joseph Black",
+    intfact: "The pure form of magnesium was isolated in 1808 by Humphry Davy (English chemist) by passing current through magnesium oxide (molten form)."
   },
   Al: {
-    name: "Aluminium",
+    name: "Aluminum",
     radioactive: false,
     category: "Post-transition Metal",
     num: 13,
-    discdate: 0000,
-    discoverer: "?????",
-    intfact: ""
+    discdate: 1824,
+    discoverer: "Hans Christian Orsted",
+    intfact: "Aluminum's light weight, high electrical conductivity and high resistant to corrosion has make it an industrially attractive metal."
   },
   Si: {
     name: "Silicon",
     radioactive: false,
     category: "Metalloid",
     num: 14,
-    discdate: 0000,
-    discoverer: "?????",
-    intfact: ""
+    discdate: 1823,
+    discoverer: "Jöns Jacob Berzelius",
+    intfact: "Silicon is the second most abundant element in earth’s crust. "
   },
   P: {
     name: "Phosphorous",
     radioactive: false,
     category: "Non-metal",
     num: 15,
-    discdate: 0000,
-    discoverer: "?????",
-    intfact: ""
+    discdate: 1669,
+    discoverer: "Hennig Brand",
+    intfact: "The name phosphorus has an interesting origin, as Phosphorus is the name of planet Venus in Ancient Greece language and it means “carrier of light” or “light-bringer”. "
   },
   S: {
     name: "Sulfur",
     radioactive: false,
     category: "Non-metal",
     num: 16,
-    discdate: 0000,
-    discoverer: "?????",
-    intfact: ""
+    discdate: 1867,
+    discoverer: "Antoine Lavoisier",
+    intfact: "In China, as early as the 6th century BC, sulfur was known as shiliuhuang and was extracted from pyrite. It was used mainly in black gunpowder by the Chinese."
   },
   Cl: {
     name: "Chlorine",
@@ -178,7 +178,7 @@ const elementInfo = {
     num: 20,
     discdate: 0000,
     discoverer: "?????",
-    intfact: ""
+    intfact: "Calciums interesting fact"
   },
   Sc: {
     name: "Scandium",
@@ -851,7 +851,7 @@ if (correctElements){
  
       elementsArray.splice(index,1);
     }
-}
+}  // End of if correctElements block
 
 
 
@@ -859,11 +859,7 @@ if (correctElements){
 
 
 // Events for mobile screen sizes
-//if (viewportSize <= 760) {
   if (viewportSize <= 700) {
-
-
-
 
   $('.element').on('click', function(){
     // Check that the element clicked isn't already expanded
@@ -2790,7 +2786,7 @@ function initViewHelpModal() {
 
 
 
-// June 24 experimenting with doubletap detection
+// June 23  experimenting with doubletap detection
 document.body.addEventListener('touchend', detectDoubleTapClosure(), { passive: false });
 function detectDoubleTapClosure() {
   let lastTap = 0;
@@ -2809,3 +2805,6 @@ function detectDoubleTapClosure() {
     lastTap = curTime;
   };
 }
+
+
+// June 24 2023 try adding swipe logic to table elements

@@ -67,6 +67,7 @@ body {
   transition: 75ms ease-out;
   padding: 1vw;
   line-height: 16px;
+  z-index: 10;
 }
 
 .full-table {
@@ -107,6 +108,7 @@ body {
 .element .number,
 .element .symbol{
   opacity: 0;
+  color: white;
 }
 
 .number {
@@ -141,6 +143,7 @@ body {
   transition: 250ms linear;
   opacity: 0;
   z-index: 1;
+  color: white;
 }
 
 .element__expanded {
@@ -430,7 +433,7 @@ body {
 #container{
   display: flex;
   background: rgb(75,29,91, .41);
-  background: linear-gradient(79deg, rgba(125,29,251,1) 0%, rgba(29,74,251,0.37857141147474616) 75%, rgba(137,20,220,1) 100%);
+  background: linear-gradient(79deg, rgba(125,29,251,.41) 0%, rgba(29,74,251,0.37857141147474616) 75%, rgba(137,20,220,.41) 100%);
  /* background: url("https://images.unsplash.com/photo-1595500381751-d940898d13a0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGNoZW1pc3RyeXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60");*/
   height: 95vh;
   align-items: center;
@@ -1167,13 +1170,13 @@ textarea{
 
 
 
-@media (max-width: 380px) {
+@media (max-width: 490px) {
   .number {
-    font-size: 2.45vw;
+    font-size: 2.25vw;
   }
   
   .symbol {
-    font-size: 2.50vw;
+    font-size: 2.950vw;
   }
 
 }
