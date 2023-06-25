@@ -2733,11 +2733,25 @@ function showPeriodicTable(elNum, elSym){
 
   const elementSymbol = elSym;
   const elementName = elementInfo[elementSymbol]['name']
-  const elementCategory = elementName + " is a(n) " +
+  const elementNum = elementInfo[elementSymbol]['num']
+// let elementCategory = elementName + " is a(n) " +
  elementInfo[elementSymbol]['category'] +  " Discovered by " +   elementInfo[elementSymbol]['discoverer'] + " in " + elementInfo[elementSymbol]['discdate'] + ". " + elementInfo[elementSymbol]['intfact']
 
 
-    
+ // Added June 25
+ let isa = ", is a "
+      if (elementInfo[elementSymbol]['category'].charAt(0) === "A"){
+        isa = ", is an ";
+      }
+      let elementCategory = elementName + " #" + elementNum + isa +  elementInfo[elementSymbol]['category'] +  " discovered by " +   elementInfo[elementSymbol]['discoverer'] + " in " + elementInfo[elementSymbol]['discdate'] + ". " + elementInfo[elementSymbol]['intfact']
+ 
+
+
+ // End of June 25 add
+
+
+
+
 
    $('.group-label').text(elementCategory)
 // $('.group-label').text("test")
