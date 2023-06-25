@@ -10,7 +10,10 @@ $f-block--padding-right: calc(#{$box-dimension} + 2vw + 2px);
 // Color palette
 //$background--color: #F2EFE9;
 $background--color: #a07621;
-$text--color: #071108;  
+$table-background--color: hsl(226, 42%, 5%);  
+$table-background--color2: hsl(226, 42%, 14%);  
+$title--color: antiquewhite;  
+$text--color: rgb(24, 23, 23);  
 $other-non-metal--color: hsl(114, 61%, 37%);
 $alkali-metal--color: hsl(3, 80%, 45%);
 $alkaline-earth-metal--color: hsl(24, 100%, 50%);
@@ -164,7 +167,7 @@ body {
 
 .holder {
   @extend .element;
-  border: 2px dotted #ccc;
+ // border: 2px dotted #ccc;
 }
 
 .f-block {
@@ -221,7 +224,8 @@ body {
   display: inline;
   font-size: 6vw;
   margin: 3vh 0 2vh;
-  color: $text--color;
+  color: $title--color;
+  color: white
 }
 
 
@@ -248,7 +252,7 @@ body {
     display: inline;
     font-size: 2vw;
     margin: 3vh 0 2vh;
-    color: $text--color;
+    color: $title--color;
   }
 
   .number {
@@ -1084,6 +1088,7 @@ hr{
   background-size: cover;
   background-size: stretch;
   background-position: top;
+  background: linear-gradient(145deg, $table-background--color, $table-background--color2);
   height: 95vh;
 }
 

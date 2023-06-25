@@ -115,7 +115,7 @@ const elementInfo = {
     num: 13,
     discdate: 1824,
     discoverer: "Hans Christian Orsted",
-    intfact: "Aluminum's light weight, high electrical conductivity and high resistant to corrosion has make it an industrially attractive metal."
+    intfact: "Aluminum's light weight, high electrical conductivity and high resistance to corrosion has make it an industrially attractive metal."
   },
   Si: {
     name: "Silicon",
@@ -827,14 +827,14 @@ $('.element').each(function() {
     elementsArray.push(elementObj);
     i++;
   }
-})
+})  // End of .element block of code
 
 
 
 
 
 
-// June 22 - add code to getitem array of correct elements from localstorage and remove those from the active elements to guess array
+// June 22 - add code to get the array of correct elements from localstorage and remove those from the active elements still to be discovered
 let correctElements = JSON.parse(window.localStorage.getItem('elements'));
 
 
@@ -880,7 +880,7 @@ if (correctElements){
     // const elementCategory = elementInfo[elementSymbol]['category']
     // $(this).append(`<h3 class="category">${elementCategory}</h3>`)
   })
-}
+}  // end of viewportsize <= 700 block
 
 // Events for larger screen size
 //if (viewportSize > 760) {
@@ -902,17 +902,26 @@ if (correctElements){
 
       const elementSymbol = $(this).children('.symbol').text()
       const elementName = elementInfo[elementSymbol]['name']
-      const elementCategory = elementInfo[elementSymbol]['category'] +  " Discovered by " +   elementInfo[elementSymbol]['discoverer'] + " in " + elementInfo[elementSymbol]['discdate'] + ". " + elementInfo[elementSymbol]['intfact']
+      const elementNum = elementInfo[elementSymbol]['num']
+      let isa = ", is a "
+      if (elementInfo[elementSymbol]['category'].charAt(0) === "A"){
+        isa = ", is an ";
+      }
+      const elementCategory = elementName + " #" + elementNum + isa +  elementInfo[elementSymbol]['category'] +  " discovered by " +   elementInfo[elementSymbol]['discoverer'] + " in " + elementInfo[elementSymbol]['discdate'] + ". " + elementInfo[elementSymbol]['intfact']
       let categoryColorSelector = $(this).attr('class').replace(/element /, '')
       categoryColorSelector = categoryColorSelector.replace(/ hoverable/, '')
    //   const groupLabelColor = colors[categoryColorSelector]
       const groupLabelColor = 'linear-gradient(65deg, ' + colors[categoryColorSelector] + ', antiquewhite';
       const isRadioactive = elementInfo[elementSymbol]['radioactive']
+
         // Display hovered element's category name under the title
       $('.group-label').text(elementCategory)
+     
         // Make the background of the category label box the color of the hovered category
       $('.group-label').css('background', groupLabelColor)
       $('.group-label').css('font-size', '14px')
+ 
+      $("#group-element-name").text("Hello world!");
   //    $("#"+styleTarget).css({'font-size':'"+$(this).val()+"px'});
          // Add some attributes to the element to be used later
        $(this).attr({
@@ -940,6 +949,7 @@ if ($(this).hasClass("hoverable")){
   return;
 }
 
+// June 25 try to detect if touchstart - if yes check if previous touched was the same before showing video 
 
   const elementNumber = $(this).children('.number').text()
   const elementName = $(this).attr("title")
