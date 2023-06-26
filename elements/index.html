@@ -24,14 +24,13 @@
   <header>
     <div class="header-left">
       <i class="far fa-question-circle" id="help"></i>
-      <i class="fa fa-cog" id="preferences" aria-hidden="true"></i>
       <i class="fas fa-chart-bar" id="stats"></i>
     </div>
     <div class="header-center">
       <h1 class="title">ELEMENTLE</h1>
     </div>
     <div class="header-right">
-   <i class="fa fa-volume-up" id="aud-icon"></i>
+   <i class="fa fa-trash" id="del-tbl-icon"></i>
    <!--   <i class="fa fa-bars" id="categories" aria-hidden="true"></i> -->
       <i class="fa fa-table" id="table" aria-hidden="true"></i>
    
@@ -201,88 +200,23 @@
     </div>
   </div>
 
-  <div id="preferences-modal" class="modal">
+
+  <div id="delete-table-modal" class="modal">
     <!-- Modal content -->
     <div class="modal-content">
       <div class="modal-header">
-        <h2>Preferences</h2>
-       <span class="close" id="close-preferences">&times;</span>
+        <h2>Delete Periodic Table?</h2>
+       <span class="close" id="close-table-delete">&times;</span>
       </div>
-      <div class="modal-body" id="preferences-body">
-        <h5>Choose Background</h5>
-        <section id="backgrounds">
-          <div id="random-bg-container">
-            <img class="mini-img" src="https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&w=1600">
-            <img class="mini-img"src="https://cdn.pixabay.com/photo/2021/01/09/20/23/road-5903402__340.jpg">
-            <img class="mini-img"src="https://images.pexels.com/photos/221502/pexels-photo-221502.jpeg?auto=compress&cs=tinysrgb&w=1600">
-            <img class="mini-img"src="https://images.pexels.com/photos/302743/pexels-photo-302743.jpeg?auto=compress&cs=tinysrgb&w=1600">
-            <img class="mini-img"src="https://images.unsplash.com/photo-1566155119454-2b581dd44c59?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDZ8fHNwcmluZ3xlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60">
-            <img class="mini-img"src="https://cdn.pixabay.com/photo/2017/08/31/11/35/alps-2700403_960_720.jpg">
-          </div>
-          <div id="one-bg-container">
-            <img class="maxi-img"src="https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&w=1600">
-            <img class="maxi-img"src="https://cdn.pixabay.com/photo/2021/01/09/20/23/road-5903402__340.jpg">
-            <img class="maxi-img"src="https://images.pexels.com/photos/221502/pexels-photo-221502.jpeg?auto=compress&cs=tinysrgb&w=1600">
-            <img class="maxi-img"src="https://images.pexels.com/photos/302743/pexels-photo-302743.jpeg?auto=compress&cs=tinysrgb&w=1600">
-            <img class="maxi-img"src="https://images.unsplash.com/photo-1566155119454-2b581dd44c59?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDZ8fHNwcmluZ3xlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60">
-            <img class="maxi-img"src="https://cdn.pixabay.com/photo/2017/08/31/11/35/alps-2700403_960_720.jpg">
-          </div>
-        </section>
-        <textarea placeholder="You can copy a link to an internet image from a site like pexels or unsplash, or a link obtained after a Google image search, paste it into this field, then press enter."></textarea> 
-        <hr></hr>
-        <label for="max-char"><h5>
-          Max Characters (5 or more):
-        </h5></label>
-       
-        <input type="number" id="max-char" name="max-char" min="5" max="100"> 
-        <hr></hr>
-        <h5>Select Audio</h5>
-        <div id="audios-body">
-          
-        </div>
-        <hr></hr>
-        <p id="chameleon">
-          Chameleon Mode
-        </p>
-        
-
-
-    <!--    <img src="./construction.jpg" alt="" width=200 height=200> -->
+      <div class="modal-body" id="delete-table-body">
+        <p>Press Yes to delete all elements from the periodic table that you have correctly answered</p>
+        <h2> <span id="tbl-yes">Yes</span> <span id="tbl-no">No</span></h2>
       </div>
-
-      <div class="portrait-modal-body" id="portrait-preferences-body">
-        <h5>Choose Background</h5>
-        <section id="portrait-backgrounds">
-          <div id="portrait-random-bg-container">
-            <img class="mini-img" src="https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&w=1600">
-            <img class="mini-img"src="https://cdn.pixabay.com/photo/2021/01/09/20/23/road-5903402__340.jpg">
-            <img class="mini-img"src="https://images.pexels.com/photos/221502/pexels-photo-221502.jpeg?auto=compress&cs=tinysrgb&w=1600">
-            <img class="mini-img"src="https://images.pexels.com/photos/302743/pexels-photo-302743.jpeg?auto=compress&cs=tinysrgb&w=1600">
-            <img class="mini-img"src="https://images.unsplash.com/photo-1566155119454-2b581dd44c59?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDZ8fHNwcmluZ3xlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60">
-            <img class="mini-img"src="https://cdn.pixabay.com/photo/2017/08/31/11/35/alps-2700403_960_720.jpg">
-          </div>
-          <div id="portrait-one-bg-container">
-            <img class="maxi-img"src="https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&w=1600">
-            <img class="maxi-img"src="https://cdn.pixabay.com/photo/2021/01/09/20/23/road-5903402__340.jpg">
-            <img class="maxi-img"src="https://images.pexels.com/photos/221502/pexels-photo-221502.jpeg?auto=compress&cs=tinysrgb&w=1600">
-            <img class="maxi-img"src="https://images.pexels.com/photos/302743/pexels-photo-302743.jpeg?auto=compress&cs=tinysrgb&w=1600">
-            <img class="maxi-img"src="https://images.unsplash.com/photo-1566155119454-2b581dd44c59?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDZ8fHNwcmluZ3xlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60">
-            <img class="maxi-img"src="https://cdn.pixabay.com/photo/2017/08/31/11/35/alps-2700403_960_720.jpg">
-          </div>
-        </section>
-        <textarea placeholder="You can copy a link to an internet image from a site like pexels or unsplash, or a link obtained after a Google image search, paste it into this field, then press enter."></textarea>
-    <!--    <img src="./construction.jpg" alt="" width=200 height=200> -->
-      </div>
-
 
     </div>
   </div>
 
-
-
-
-
-
+ 
 
 
 

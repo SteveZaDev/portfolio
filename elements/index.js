@@ -4,6 +4,7 @@ const elementInfo = {
     radioactive: false,
     category: "Non-metal",
     num: 1,
+    weight: 1.008,
     discdate: 1766,
     discoverer: "Henry Cavendish",
     intfact: "Hydrogen is the lightest element. It is colorless, odorless, tasteless and is highly combustible."
@@ -14,6 +15,7 @@ const elementInfo = {
     radioactive: false,
     category: "Noble Gas",
     num: 2,
+    weight: 4.003,
     discdate: 1868,
     discoverer: "Pierre Janssen",
     intfact: "Helium's boiling point is the lowest among all the elements, and it does not have a melting point at standard pressure."
@@ -23,6 +25,7 @@ const elementInfo = {
     radioactive: false,
     category: "Alkali Metal",
     num: 3,
+    weight: 6.940,
     discdate: 1817,
     discoverer: "Johan August Arfvedson",
     intfact: "Lithium is a soft, silvery-white alkali metal. Under standard conditions, it is the least dense metal and the least dense solid element."
@@ -32,15 +35,17 @@ const elementInfo = {
     radioactive: false,
     category: "Alkaline Earth Metal",
     num: 4,
+    weight: 9.012,
     discdate: 1797,
     discoverer: "Nicholas Louis",
-    intfact: "Beryllium is steel-gray, strong, lightweight and brittle. It is a divalent element that occurs naturally only in combination with other elements to form minerals. Notable gemstones high in beryllium include beryl (aquamarine, emerald, red beryl) and chrysoberyl."
+    intfact: "Beryllium is steel-gray, strong, lightweight and brittle. It is a divalent element that occurs naturally only in combination with other elements to form minerals. Gemstones high in beryllium include beryl (aquamarine, emerald, red beryl) and chrysoberyl."
   },
   B: {
     name: "Boron",
     radioactive: false,
     category: "Metalloid",
     num: 5,
+    weight: 10.810,
     discdate: 1807,
     discoverer: "Sir Humphry Davy",
     intfact: "In its crystalline form it is a brittle, dark, lustrous metalloid; in its amorphous form it is a brown powder."
@@ -50,6 +55,7 @@ const elementInfo = {
     radioactive: false,
     category: "Non-metal",
     num: 6,
+    weight: 12.011,
     discdate: 1722,
     discoverer: "Antoine Ferchault de Réaumur",
     intfact: "Carbon is the 15th most abundant element in the Earth's crust, and the fourth most abundant element in the universe by mass after hydrogen, helium, and oxygen."
@@ -59,6 +65,7 @@ const elementInfo = {
     radioactive: false,
     category: "Non-metal",
     num: 7,
+    weight: 14.007,
     discdate: 1772,
     discoverer: "Daniel Rutherford",
     intfact: "Nitrogen was discovered as a novel element by Daniel Rutherford (1722) and he termed it as the noxious air. He found that it was that component of the air that did not support combustion."
@@ -68,6 +75,7 @@ const elementInfo = {
     radioactive: false,
     category: "Non-metal",
     num: 8,
+    weight: 15.999,
     discdate: 1774,
     discoverer: "Joseph Priestly",
     intfact: "In 1774, Carl Wilhelm Scheele and Joseph Priestley independently discovered oxygen, and named it “fire air” and “dephlogisticated air”, respectively due to its role in combustion."
@@ -77,6 +85,7 @@ const elementInfo = {
     radioactive: false,
     category: "Halogen",
     num: 9,
+    weight: 18.998,
     discdate: 1810,
     discoverer: "Andre-Marie Ampere",
     intfact: "The high reactivity and corrosive nature of fluorine led to delay in the discovery and isolation of fluorine as a distinct element. Several early experiments with fluorine caused serious health hazards to the scientist."
@@ -86,6 +95,7 @@ const elementInfo = {
     radioactive: false,
     category: "Noble Gas",
     num: 10,
+    weight: 20.18,
     discdate: 1898,
     discoverer: " Morris W. Travers and Sir William Ramsay",
     intfact: "Ramsay discovered it by chilling an air sample until it became a liquid then capturing the gases released from the liquid as it was warmed. Neon stood out because of its brilliant red light under spectroscopic discharge."
@@ -95,6 +105,7 @@ const elementInfo = {
     radioactive: false,
     category: "Alkali Metal",
     num: 11,
+    weight: 22.990,
     discdate: 1807,
     discoverer: "Sir Humphry Davy",
     intfact: "Sodium is the sixth most abundant element in the Earth's crust and exists in numerous minerals such as feldspars, sodalite, and halite."
@@ -104,6 +115,7 @@ const elementInfo = {
     radioactive: false,
     category: "Alkaline Earth Metal",
     num: 12,
+    weight: 24.305,
     discdate: 1750,
     discoverer: "Joseph Black",
     intfact: "The pure form of magnesium was isolated in 1808 by Humphry Davy (English chemist) by passing current through magnesium oxide (molten form)."
@@ -113,6 +125,7 @@ const elementInfo = {
     radioactive: false,
     category: "Post-transition Metal",
     num: 13,
+    weight: 26.982,
     discdate: 1824,
     discoverer: "Hans Christian Orsted",
     intfact: "Aluminum's light weight, high electrical conductivity and high resistance to corrosion has make it an industrially attractive metal."
@@ -122,6 +135,7 @@ const elementInfo = {
     radioactive: false,
     category: "Metalloid",
     num: 14,
+    weight: 28.085,
     discdate: 1823,
     discoverer: "Jöns Jacob Berzelius",
     intfact: "Silicon is the second most abundant element in earth’s crust. "
@@ -131,6 +145,7 @@ const elementInfo = {
     radioactive: false,
     category: "Non-metal",
     num: 15,
+    weight: 30.974,
     discdate: 1669,
     discoverer: "Hennig Brand",
     intfact: "The name phosphorus has an interesting origin, as Phosphorus is the name of planet Venus in Ancient Greece language and it means “carrier of light” or “light-bringer”. "
@@ -140,6 +155,7 @@ const elementInfo = {
     radioactive: false,
     category: "Non-metal",
     num: 16,
+    weight: 32.06,
     discdate: 1867,
     discoverer: "Antoine Lavoisier",
     intfact: "In China, as early as the 6th century BC, sulfur was known as shiliuhuang and was extracted from pyrite. It was used mainly in black gunpowder by the Chinese."
@@ -149,15 +165,17 @@ const elementInfo = {
     radioactive: false,
     category: "Halogen",
     num: 17,
-    discdate: 0000,
-    discoverer: "?????",
-    intfact: ""
+    weight: 35.45,
+    discdate: 1810,
+    discoverer: "Humphry Davy",
+    intfact: "Chlorine compound, sodium chloride (table salt) has been known by human civilizations since prehistoric times and evidence of use of rock salt have been found from as early as 3000 BC"
   },
   Ar: {
     name: "Argon",
     radioactive: false,
     category: "Noble Gas",
     num: 18,
+    weight: 1.008,
     discdate: 0000,
     discoverer: "?????",
     intfact: ""
@@ -167,6 +185,7 @@ const elementInfo = {
     radioactive: false,
     category: "Alkali Metal",
     num: 19,
+    weight: 1.008,
     discdate: 0000,
     discoverer: "?????",
     intfact: ""
@@ -176,6 +195,7 @@ const elementInfo = {
     radioactive: false,
     category: "Alkaline Earth Metal",
     num: 20,
+    weight: 1.008,
     discdate: 0000,
     discoverer: "?????",
     intfact: "Calciums interesting fact"
@@ -185,6 +205,7 @@ const elementInfo = {
     radioactive: false,
     category: "Transition Metal",
     num: 21,
+    weight: 1.008,
     discdate: 0000,
     discoverer: "?????",
     intfact: ""
@@ -799,7 +820,7 @@ const viewportSize = $('.full-table').width()
 
 $('#screen-width').text(viewportSize)
 
-
+let elementLastTouched = "";
 
 
 let elementsArray = [];
@@ -894,7 +915,7 @@ if (correctElements){
     function() {
       console.log("checking hoverableness")
       if ($(this).hasClass("hoverable")){
-
+        console.log("we are hoverable")
       } else {
         return;
       }
@@ -910,20 +931,18 @@ if (correctElements){
       const elementCategory = elementName + " #" + elementNum + isa +  elementInfo[elementSymbol]['category'] +  " discovered by " +   elementInfo[elementSymbol]['discoverer'] + " in " + elementInfo[elementSymbol]['discdate'] + ". " + elementInfo[elementSymbol]['intfact']
       let categoryColorSelector = $(this).attr('class').replace(/element /, '')
       categoryColorSelector = categoryColorSelector.replace(/ hoverable/, '')
-   //   const groupLabelColor = colors[categoryColorSelector]
       const groupLabelColor = 'linear-gradient(65deg, ' + colors[categoryColorSelector] + ', antiquewhite';
       const isRadioactive = elementInfo[elementSymbol]['radioactive']
 
-        // Display hovered element's category name under the title
+        // Display hovered element's info
       $('.group-label').text(elementCategory)
      
         // Make the background of the category label box the color of the hovered category
       $('.group-label').css('background', groupLabelColor)
       $('.group-label').css('font-size', '14px')
- 
-      $("#group-element-name").text("Hello world!");
+
   //    $("#"+styleTarget).css({'font-size':'"+$(this).val()+"px'});
-         // Add some attributes to the element to be used later
+         // Add some attributes to the element to be used later - these attributes only set on hover, so never set on a touch device
        $(this).attr({
          "title": elementName,
          "data-isRadioactive": isRadioactive
@@ -937,28 +956,71 @@ if (correctElements){
       $('.group-label').css('background', colors['background'])
       $('.group-label').css('background-color', colors['red'])
     }
-  )
-}
+  )  // End of hover block
+}  // end of viewport > 300 block
 
-// When an element is clicked...
-$('.element').on('click', function() {
+// When an element is clicked...  look at line 895 or so
+$('.element').on('click touchstart', function(event) {
 // Make sure it is hoverable which is synonomous with clickable
+console.log ("event = " + event)
+console.log ("event current target = " + event.currentTarget)
+console.log ("event current target tag = " + event.currentTarget.tagName)
+console.log ("event current target tag class = " + event.currentTarget.className)
+console.log ("event current target tag title = " + event.currentTarget.title)
+console.log ("event current target tag h1 = " + event.currentTarget.h1)
+console.log("element name = " + $('this').className)
+
+children = event.currentTarget.children[0];
+            console.log("Text of child node is - "
+                + children.innerHTML)
+        
+
+
+let content = document.getElementById('menu');
+let firstChild = event.currentTarget.lastChild.nodeName;
+console.log("last child text = " + firstChild.text);
+
 if ($(this).hasClass("hoverable")){
+  console.log("hoverable event type = " + event.type)
 
 } else {
+  console.log("does not have hoverable class set = " + event.type)
+  elementLastTouched = children.innerHTML; 
   return;
 }
 
-// June 25 try to detect if touchstart - if yes check if previous touched was the same before showing video 
+// June 26 try to detect if touchstart - if yes check if previous touched was the same before showing video 
+let getUrl = false;
+if (event.type == "touchstart") {
+  $(this).off('click');
+  console.log("Only touch event is fired");
+  if (children.innerHTML === elementLastTouched){
+    getUrl = true;
+  }
+  elementLastTouched = children.innerHTML;   
+} else if (event.type == "click") {
+  $(this).off('touchstart');
+  console.log("Only click event is fired");
+  getUrl = true;
+}
 
+
+
+
+
+  console.log("after off logic the event type = " + event.type)
   const elementNumber = $(this).children('.number').text()
   const elementName = $(this).attr("title")
 
+
+  /*
   // // Check to see if the clicked element is radioactive
   if ($(this).attr("data-isRadioactive") === "true") {
     alert(`Watch out! ${elementName} is radioactive, yo!`)
-  }
+  }*/
   // Make the Periodic Videos URL
+  console.log("geturl = " + getUrl)
+  if (getUrl){
   const videoUrl = () => {
       let urlNumber = [...elementNumber]
       while (urlNumber.length < 3) {
@@ -970,6 +1032,7 @@ if ($(this).hasClass("hoverable")){
  // if (confirm(`${elementName} video?`)) {
     window.open(videoUrl())
  // }
+  }
 })
 
 
@@ -1093,7 +1156,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-    initPreferencesModal();
     initCategories();
     initHelpModal();
     initStatsModal();
@@ -1101,6 +1163,8 @@ document.addEventListener("DOMContentLoaded", () => {
     initPeriodicBtn();
    
     initLook();
+
+    initDeleteModal();
     
     playButtonEl = document.getElementById("start")
 
@@ -2476,110 +2540,6 @@ function playMusic(){
 }
 
 
-function initPreferencesModal() {
-
-
-  const modal = document.getElementById("preferences-modal");
-  // Get the button that opens the preferences modal
-  const btn = document.getElementById("preferences");
-  const rndLandscapeEl = document.getElementById("random-bg-container");
-  const rndPortraitEl = document.getElementById("portrait-random-bg-container");
-  maxCharEl = document.getElementById("max-char")
-  maxCharacters = window.localStorage.getItem("maxCharsEL") || 35;
-  maxCharEl.value = maxCharacters;
-
-  // Get the <span> element that closes the modal 
-  const span = document.getElementById("close-preferences");
-
-
-  const preferencesContainerEl = document.getElementById("preferences-body")
-  const portraitPreferencesContainerEl = document.getElementById("portrait-preferences-body")
-
-  const textAreaEl = document.querySelector("textarea");
- // preferencesContainerEl.style.display="none"
-  portraitPreferencesContainerEl.style.display="none"
-
-  // When the user clicks on the button, open the modal
-  btn.addEventListener("click", function () {
-    console.log("just clicked on preferences button")
-    const audio = new Audio ("./auds/stats.mp3");
-    audio.play()
-    modal.style.display = "block";
-    helpEl = document.getElementById("preferences-modal")
-  });
-
-  // When the user clicks on <span> (x), close the modal
-  span.addEventListener("click", function () {
-    modal.style.display = "none";
-    maxCharEl = document.getElementById("max-char")
-    console.log("max-char value = " + maxCharEl.value + " max-char is " + typeof(maxCharEl.value))
-    maxCharacters = Number(maxCharEl.value);
-    if (maxCharacters < 5){
-      maxCharacters = 5;
-      maxCharEl.value = 5;
-    }
-    initCategories();
-    initCategoriesModal();
-    console.log("maxCharacters converted to number = " + maxCharacters)
-    window.localStorage.setItem("maxCharsEl", Number(maxCharacters));
-  });
-
-  // When the user clicks anywhere outside of the modal, close it
-  window.addEventListener("click", function (event) {
-    if (event.target == modal) {
-      modal.style.display = "none";
-    }
-  });
-
-    // When the user clicks anywhere outside of the modal, close it
-    textAreaEl.addEventListener("keydown", function (event) {
-      var key = event.keyCode;
-      // If the user has pressed enter
-      if (key === 13) {
-        console.log("enter key pressed " + textAreaEl.value)
-        const body = document.getElementsByTagName('body')[0];
-        body.style.backgroundImage = "url(" + textAreaEl.value + ")"
-        window.localStorage.setItem('backgroundEl', JSON.stringify(textAreaEl.value));
-      }
-    });
-
-
-    // When the user clicks on the random landscpape - randomly change the background
-    rndLandscapeEl.addEventListener("click", function (event) {
-      console.log("add code to randomly change background")
-      let randomImg = Math.floor(Math.random()*backgroundImagesLandscape.length)
-      const body = document.getElementsByTagName('body')[0];
-      body.style.backgroundImage = "url(" + backgroundImagesLandscape[randomImg] + ")"
-      window.localStorage.setItem('backgroundEl', JSON.stringify("Random"));
-    });
-
-        // When the user clicks on the random portrait - randomly change the background
-        rndPortraitEl.addEventListener("click", function (event) {
-          console.log("add code to randomly change background")
-          let randomImg = Math.floor(Math.random()*backgroundImagesLandscape.length)
-          const body = document.getElementsByTagName('body')[0];
-          body.style.backgroundImage = "url(" + backgroundImagesLandscape[randomImg] + ")"
-          window.localStorage.setItem('backgroundEl', JSON.stringify("Random"));
-        });
-    
-
-
-    const bgs = document.querySelectorAll(".maxi-img");
-    for (let i = 0; i < bgs.length; i++) {
-      bgs[i].addEventListener("click", ({ target }) => {
-
-        let bg = target.getAttribute("src");
-        const body = document.getElementsByTagName('body')[0];
-        body.style.backgroundImage = "url(" + bg + ")"
-        window.localStorage.setItem('backgroundEl', JSON.stringify(bg));
-
-      });
-      }
-
-
-      initBgAudios();
-      initChameleon();
-    }
 
 
 
@@ -2832,3 +2792,58 @@ function detectDoubleTapClosure() {
 
 
 // June 24 2023 try adding swipe logic to table elements
+
+
+
+// June 26 2023 add delete table modal
+function initDeleteModal() {
+  const modal = document.getElementById("delete-table-modal");
+  // Get the button that opens the modal
+  const btn = document.getElementById("del-tbl-icon");
+
+  // Get the <span> element that closes the modal
+  const span = document.getElementById("close-table-delete");
+  const yesEl = document.getElementById("tbl-yes");
+  const noEl = document.getElementById("tbl-no");
+
+
+
+  // When the user clicks on the button, open the modal
+  btn.addEventListener("click", function () {
+    console.log("just clicked on table del button classlist = " + btn.classList)
+    modal.style.display = "block";
+    helpEl = document.getElementById("stats-modal")
+ //   helpEl.requestFullscreen();
+  });
+
+  // When the user clicks on <span> (x), close the modal
+  span.addEventListener("click", function () {
+    modal.style.display = "none";
+  });
+
+
+ 
+ 
+      // When the user clicks on Yes, clear elements in  localstorage
+      yesEl.addEventListener("click", function () {
+        localStorage.removeItem("elements")
+        window.location.reload();
+        modal.style.display = "none";
+      });
+
+      // When the user clicks on No, close delete modal
+      noEl.addEventListener("click", function () {
+        modal.style.display = "none";
+      });
+      
+
+  
+
+    
+  // When the user clicks anywhere outside of the modal, close it
+  window.addEventListener("click", function (event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  });
+}

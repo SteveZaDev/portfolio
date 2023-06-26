@@ -149,6 +149,7 @@ body {
   color: white;
 }
 
+
 .element__expanded {
   height: $expanded-dimension;
   width: $expanded-dimension;
@@ -692,6 +693,22 @@ button.correct-letter-in-place {
   font-family: 'Times New Roman', Times, serif;
 }
 
+#delete-table-modal {
+  display: none;
+  position: fixed;
+  z-index: 20;
+  padding-top: 25px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
 
 /*
 .categories-container{
@@ -870,6 +887,19 @@ h3:last-child{
 }
 
 #yes:hover, #no:hover {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#delete-table-body {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+#tbl-yes:hover, #tbl-no:hover {
   color: #000;
   text-decoration: none;
   cursor: pointer;
