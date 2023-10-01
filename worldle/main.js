@@ -32,7 +32,7 @@ let protoWordsArray = [
     sel: false,
     parent: "",
     numOfItems: 0,
-    items: ["WINGS", "THE BROADWAY MELODY", "CIMMARON", "GRAND HOTEL",  "CAVALCADE", "IT HAPPENED ONE NIGHT", "MUTINY ON THE BOUNTY", "THE GREAT ZIEGFELD", "THE LIFE OF EMILE ZOLA", "GONE WITH THE WIND", "REBECCA", "HOW GREEN WAS VALLEY", "MRS MINIVER", "CASABLANCA", "GOING MY WAY", "THE LOST WEEKEND", "GENTLEMANS AGREEMENT", "HAMLET", "ALL THE KINGS MEN", "ALL ABOUT EVE", "AN AMERICAN IN PARIS", "THE GREATEST SHOW ON EARTH", "FROM HERE TO ETERNITY", "ON THE WATERFRONT", "MARTY", "THE BRIDGE ON THE RIVER KWAI", "GIGI", "BEN HUR", "THE APARTMENT", "WEST SIDE STORY", "LAWRENCE OF ARABIA", "TOM JONES", "MY FAIR LADY", "THE SOUND OF MUSIC", "A MAN FOR ALL SEASONS", "IN THE HEAT OF THE NIGHT", "OLIVER", "MIDNIGHT COWBOY", "PATTON", "THE FRENCH CONNECTION", "THE GODFATHER", "THE STING", "THE GODFATHER PART II", "ROCKY", "ANNIE HALL", "THE DEER HUNTER", "KRAMER VS KRAMER", "ORDINARY PEOPLE", "CHARIOTS OF FIRE", "GANDHI", "TERMS OF ENDEARMENT", "AMADEUS", "OUT OF AFRICA", "PLATOON", "THE LAST EMPEROR", "RAIN MAN", "DRIVING MISS DAISY", "DANCES WITH WOLVES", "THE SILENCE OF THE LAMBS", "UNFORGIVEN", "SCHINDLERS LIST", "FORREST GUMP", "BRAVEHEART", "THE ENGLISH PATIENT", "TITANIC", "SHAKESPEARE IN LOVE", "AMERICAN BEAUTY", "GLADIATOR", "A BEAUTIFUL MIND", "CHICAGO", "LORD OF THE RINGS", "MILLION DOLLAR BABY", "CRASH", "THE DEPARTED", "NO COUNTRY FOR OLD MEN", "SLUMDOG MILLIONAIRE", "THE HURT LOCKER", "THE KINGS SPEECH", "THE ARTIST", "ARGO", "TWELVE YEARS A SLAVE", "BIRDMAN", "SPOTLIGHT", "MOONLIGHT", "THE SHAPE OF WATER", "GREEN BOOK", "PARASITE", "NOMADLAND", "CODA", "MODERN TIMES", "THE PETRIFIED FOREST", "THE GOOD EARTH", "LOST HORIZON", "THE PRISONER OF ZENDA", "TOPPER", "THE ADVENTURES OF ROBIN HOOD", "BRINGING UP BABY", "THE LADY VANISHES", "YOU CANT TAKE IT WITH YOU", "DESTRY RIDES AGAIN", "THE FOUR FEATHERS", "GOODBYE MR CHIPS", "GUNGA DIN", "THE HUNCHBACK OF NOTRE DAME", "MR SMITH GOES TO WASHINGTON", "NINOTCHKA", "STAGECOACH", "THE WIZARD OF OZ", "WUTHERING HEIGHTS", "ABE LINCOLN IN ILLINOIS", "FANTASIA", "FOREIGN CORRESPONDENT", "THE GRAPES OF WRATH", "THE GREAT DICTATOR", "HIS GIRL FRIDAY", "THE MARK OF ZORRO", "THE PHILADELPHIA STORY", "PRIDE AND PREJUDICE", "REBECCA", "THE SEA HAWK", "THE SHOP AROUND THE CORNER", "THE THIEF OF BAGDAD", "CITIZEN KANE", "HERE COMES MR JORDAN", "HIGH SIERRA", "HOW GREEN WAS MY VALLEY", "THE MALTESE FALCON", "MEET JOHN DOE", "THE SEA WOLF", "SERGEANT YORK", "SUSPICION", "THAT HAMILTON WOMAN", "THE WOLF MAN", "CASABLANCA", "KINGS ROW", "THE MAGNIFICENT AMBERSONS", "NOW VOYAGER", "THE PRIDE OF THE YANKEES", "RANDOM HARVEST", "SABOTEUR", "TO BE OR NOT TO BE", "FOR WHOM THE BELL TOLLS", "HEAVEN CAN WAIT", "JANE EYRE", "THE OX BOW INCIDENT", "PHANTOM OF THE OPERA", "SHADOW OF A DOUBT", "THE SONG OF BERNADETTE", "WATCH ON THE RHINE", "ARSENIC AND OLD LACE", "DOUBLE INDEMNITY", "GASLIGHT", "GOING MY WAY", "HENRY V", "LAURA", "LIFEBOAT", "MEET ME IN ST LOUIS", "MURDER MY SWEET", "NATIONAL VELVET", "TO HAVE AND HAVE NOT", "AND THEN THERE WERE NONE", "THE BELLS OF ST MARYS", "THE BODY SNATCHER", "LEAVE HER TO HEAVEN", "MILDRED PIERCE", "THE PICTURE OF DORIAN GRAY", "SPELLBOUND", "A TREE GROWS IN BROOKLYN", "THE BEST YEARS OF OUR LIVES", "THE BIG SLEEP", "ITS A WONDERFUL LIFE", "MY DARLING CLEMENTINE", "NOTORIOUS", "THE POSTMAN ALWAYS RINGS TWICE", "THE SPIRAL STAIRCASE", "THE STRANGER", "THE YEARLING", "THE BACHELOR AND THE BOBBY SOXER", "THE BISHOPS WIFE", "BLACK NARCISSUS", "CROSSFIRE", "DARK PASSAGE", "A DOUBLE LIFE", "THE FARMERS DAUGHTER", "GENTLEMANS AGREEMENT", "THE GHOST AND MRS MUIR", "THE SECRET LIFE OF WALTER MITTY", "I REMEMBER MAMA", "JOHNNY BELINDA", "KEY LARGO", "THE LADY FROM SHANGHAI", "RED RIVER", "THE RED SHOES", "ROPE", "THE SNAKE PIT", "THE TREASURE OF THE SIERRA MADRE", "ALL THE KINGS MEN", "THE FOUNTAINHEAD", "THE HEIRESS", "KIND HEARTS AND CORONETS", "ON THE TOWN", "SHE WORE A YELLOW RIBBON", "THE THIRD MAN", "TWELVE OCLOCK HIGH", "WHITE HEAT", "ALL ABOUT EVE", "THE ASPHALT JUNGLE", "BORN YESTERDAY", "FATHER OF THE BRIDE", "HARVEY", "RASHOMON", "SUNSET BOULEVARD", "THE AFRICAN QUEEN", "AN AMERICAN IN PARIS", "A CHRISTMAS CAROL", "THE DAY THE EARTH STOOD STILL", "A PLACE IN THE SUN", "QUO VADIS", "STRANGERS ON A TRAIN", "A STREETCAR NAMED DESIRE", "THE THING", "THE GREATEST SHOW ON EARTH", "HIGH NOON", "THE QUIET MAN", "SINGIN IN THE RAIN", "I CONFESS", "JULIUS CAESAR", "NIAGARA", "THE ROBE", "ROMAN HOLIDAY", "SHANE", "THE WAR OF THE WORLDS", "THE CAINE MUTINY", "CREATURE FROM THE BLACK LAGOON", "DIAM M FOR MURDER", "THE FAR COUNTRY", "GODZILLA", "REAR WINDOW", "SABRINA", "A STAR IS BORN", "BAD DAY AT BLACK ROCK", "BLACKBOARD JUNGLE", "THE COURT JESTER", "EAST OF EDEN", "GUYS AND DOLLS", "THE LADYKILLERS", "MISTER ROBERTS", "OKLAHOMA", "PICNIC", "REBEL WITHOUT A CAUSE", "RICHARD III", "TO CATCH A THIEF", "ANASTASIA", "FRIENDLY PERSUASION", "GIANT", "HIGH SOCIETY", "INVASION OF THE BODY SNATCHERS", "THE KING AND I", "THE MAN WHO KNEW TOO MUCH", "MOBY DICK", "THE SEARCHERS", "THE TEN COMMANDMENTS", "AN AFFAIR TO REMEMBER", "A FACE IN THE CROWD", "GUNFIGHT AT THE OK CORRAL", "THE INCREDIBLE SHRINKING MAN", "PATHS OF GLORY", "THE THREE FACES OF EVE", "TWELVE ANGRY MEN", "WILD STRAWBERRIES", "WITNESS FOR THE PROSECUTION", "AUNTIE MAME", "THE BIG COUNTRY", "TOUCH OF EVIL", "VERTIGO", "ANATOMY OF A MURDER", "NORTH BY NORTHWEST", "RIO BRAVO", "SOME LIKE IT HOT", "ELMER GANTRY", "INHERIT THE WIND", "THE MAGNIFICENT SEVEN", "PSYCHO", "SPARTACUS", "THE SUNDOWNERS", "BREAKFAST AT TIFFANYS", "THE GUNS OF NAVARONE", "JUDGEMENT AT NUREMBURG", "SPLENDOR IN THE GRASS", "BILLY BUDD", "CAPE FEAR", "DR NO", "HOW THE WEST WAS WON", "LOLITA", "THE LONGEST DAY", "THE MAN WHO SHOT LIBERTY VALANCE", "THE MANCHURIAN CANDIDATE", "THE MIRACLE WORKER", "TO KILL A MOCKINGBIRD", "WHAT EVER HAPPENED TO BABY JANE", "THE BIRDS", "BYE BYE BIRDIE", "CHARADE", "FROM RUSSIA WITH LOVE", "THE HAUNTING", "LILIES OF THE FIELD", "THE NUTTY PROFESSOR", "THE PINK PANTHER", "TOM JONES", "DR STRANGELOVE", "FAIL SAFE", "GOLDFINGER", "A HARD DAYS NIGHT", "MARNIE", "MARY POPPINS", "MY FAIR LADY", "THE NIGHT OF THE IGUANA", "THE PAWNBROKER", "A SHOT IN THE DARK", "ZORBA THE GREEK", "ZULU", "DOCTOR ZHIVAGO", "HELP", "BORN FREE", "FANTASTIC VOYAGE", "BONNIE AND CLYDE", "COOL HAND LUKE", "THE DIRTY DOZEN", "THE GRADUATE", "GUESS WHOS COMING TO DINNER", "IN THE HEAT OF THE NIGHT", "WAIT UNTIL DARK", "BULLIT", "CHARLY", "FUNNY GIRL", "THE LION IN WINTER", "NIGHT OF THE LIVING DEAD", "PLANET OF THE APES", "THE PRODUCERS", "ROSEMARYS BABY", "THE THOMAS CROWN AFFAIR", "BUTCH CASSIDY AND THE SUNDANCE KID", "EASY RIDER", "THE PRIME OF MISS JEAN BRODIE", "TRUE GRIT", "THE WILD BUNCH", "FIVE EASY PIECES", "A CLOCKWORK ORANGE", "DEATH IN VENICE", "DIRTY HARRY", "FIDDLE ON THE ROOF", "HAROLD AND MAUDE", "THE LAST PICTURE SHOW", "NICHOLAS AND ALEXANDRA", "PLAY MISTY FOR ME", "SHAFT", "SUNDAY BLOODY SUNDAY", "CABARET", "DELIVERANCE", "FRENZY", "LAST TANGO IN PARIS", "SLEUTH", "SOUNDER", "SUPER FLY", "AMERICAN GRAFFITI", "THE DAY OF THE JACKAL", "ENTER THE DRAGON", "THE EXORCIST", "HIGH PLAINS DRIFTER", "MEAN STREETS", "THE PAPER CHASE", "PAPER MOON", "PAPILLON", "SERPICO", "SLEEPER", "BLAZING SADDLES", "CHINATOWN", "THE CONVERSATION", "HARRY AND TONTO", "THE TOWERING INFERNO", "YOUNG FRANKENSTEIN", "BARRY LYNDON", "DOG DAY AFTERNOON", "JAWS", "THE MAN WHO WOULD BE KING", "MONTY PYTHON AND THE HOLY GRAIL", "ALL THE PRESIDENTS MEN", "MARATHON MAN", "NETWORK", "THE OMEN", "TAXI DRIVER", "CLOSE ENCOUNTERS OF THE THIRD KIND", "SATURDAY NIGHT FEVER", "THE SPY WHO LOVED ME", "STAR WARS", "COMING HOME", "MIDNIGHT EXPRESS", "WATERSHIP DOWN", "ALIEN", "APOCALYPSE NOW", "BEING THERE", "THE CHINA SYNDROME", "NORMA RAE", "RAGING BULL", "THE SHINING", "ARTHUR", "BODY HEAT", "DAS BOOT", "GALLIPOLI", "THE ROAD WARRIOR", "MY DINNER WITH ANDRE", "RAGTIME", "RAIDERS OF THE LOST ARK", "BLADE RUNNER", "DINER", "E T THE EXTRA TERRESTRIAL", "AN OFFICER AND A GENTLEMAN", "POLTERGEIST", "SOPHIES CHOICE", "TOOTSIE", "THE VERDICT", "THE BIG CHILL", "A CHRISTMAS STORY", "FLASHDANCE", "RETURN OF THE JEDI", "THE RIGHT STUFF", "RISKY BUSINESS", "SUDDEN IMPACT", "TENDER MERCIES", "GHOSTBUSTERS", "THE KILLING FIELDS", "THE NATURAL", "A PASSAGE TO INDIA", "ROMANCING THE STONE", "THE TERMINATOR", "THIS IS SPINAL TAP", "BACK TO THE FUTURE", "THE BREAKFAST CLUB", "THE COLOR PURPLE", "PALE RIDER", "PRIZZIS HONOR", "A ROOM WITH A VIEW", "WITNESS", "ALIENS", "CHILDREN OF A LESSER GOD", "THE COLOR OF MONEY", "CROCODILE DUNDEE", "THE FLY", "HANNAH AND HER SISTERS", "THE MISSION", "PLATOON", "STAND BY ME", "TOP GUN", "DIRTY DANCING", "FATAL ATTRACTION", "FULL METAL JACKET", "GOOD MORNING VIETNAM", "THE LAST EMPEROR", "LETHAL WEAPON", "MOONSTRUCK", "PREDATOR", "THE PRINCESS BRIDE", "SUSPECT", "THE UNTOUCHABLES", "THE ACCIDENTAL TOURIST", "BULL DURHAM", "CINEMA PARDISO", "DANGEROUS LIAISONS", "DIE HARD", "A FISH CALLED WANDA", "MISSISSIPPI BURNING", "WHO FRAMED ROGER RABBIT", "THE ABYSS", "BATMAN", "BORN ON THE FOURTH OF JULY", "DEAD POETS SOCIETY", "DO THE RIGHT THING", "DRIVING MISS DAISY", "FIELD OF DREAMS", "GLORY", "HENRY V", "MY LEFT FOOT", "WHEN HARRY MET SALLY", "AWAKENINGS", "DANCES WITH WOLVES", "EDWARD SCISSORHANDS", "GOODFELLAS", "HOME ALONE", "PRESUMED INNOCENT", "PRETTY WOMAN", "REVERSAL OF FORTUNE", "TOTAL RECALL", "CITY SLICKERS", "FRIED GREEN TOMATOS", "THELMA AND LOUISE", "ALADDIN", "BASIC INSTINCT", "A FEW GOOD MEN", "THE LAST OF THE MOHICANS", "MY COUSIN VINNY", "MALCOLM X", "A RIVER RUNS THROUGH IT", "SCENT OF WOMAN", "THE FUGITIVE", "GROUNDHOG DAY", "IN THE NAME OF THE FATHER", "THE JOY LUCK CLUB", "JURASSIC PARK", "MRS DOUBTFIRE", "PHILADELPHIA", "THE PIANO", "THE REMAINS OF THE DAY", "SLEEPLESS IN SEATTLE", "HOOP DREAMS", "THE LION KING", "THE MADNESS OF KING GEORGE", "PULP FICTION", "THE SHAWSHANK REDEMPTION", "TRIAL BY JURY", "TRUE LIES", "THE BRIDGES OF MADISON COUNTY", "CASINO", "GOLDENEYE", "LEAVING LAS VEGAS", "SENSE AND SENSIBILITY", "TOY STORY", "DR NO", "FROM RUSSIA WITH LOVE", "THUNDERBALL", "DIAMONDS ARE FOREVER", "YOU ONLY LIVE TWICE", "ON HER MAJESTYS SECRET SERVICE", "LIVE AND LET DIE", "THE SPY WHO LOVED ME", "FOR YOUR EYES ONLY", "A VIEW TO A KILL", "THE LIVING DAYLIGHTS", "LICENSE TO KILL", "THE MAN WITH THE GOLDEN GUN", "THE SPY WHO LOVED ME", "MOONRAKER", "OCTOPUSSY", "NEVER SAY NEVER AGAIN", "FARGO", "INDEPENDENCE DAY", "JERRY MAGUIRE", "TWISTER", "AMISTAD", "GOOD WILL HUNTING", "TITANIC", "THE BIG LEBOWSKI", "SAVING PRIVATE RYAN", "THERES SOMETHING ABOUT MARY", "BEING JOHN MALKOVICH", "THE BLAIR WITCH PROJECT", "THE MATRIX", "THE SIXTH SENSE", "CROUCHING TIGER HIDDEN DRAGON", "ERIN BROCKOVICH"]
+    items: ["WINGS", "THE BROADWAY MELODY", "CIMMARON", "GRAND HOTEL",  "CAVALCADE", "IT HAPPENED ONE NIGHT", "MUTINY ON THE BOUNTY", "THE GREAT ZIEGFELD", "THE LIFE OF EMILE ZOLA", "GONE WITH THE WIND", "REBECCA", "HOW GREEN WAS VALLEY", "MRS MINIVER", "CASABLANCA", "GOING MY WAY", "THE LOST WEEKEND", "GENTLEMANS AGREEMENT", "HAMLET", "ALL THE KINGS MEN", "ALL ABOUT EVE", "AN AMERICAN IN PARIS", "THE GREATEST SHOW ON EARTH", "FROM HERE TO ETERNITY", "ON THE WATERFRONT", "MARTY", "THE BRIDGE ON THE RIVER KWAI", "GIGI", "BEN HUR", "THE APARTMENT", "WEST SIDE STORY", "LAWRENCE OF ARABIA", "TOM JONES", "MY FAIR LADY", "THE SOUND OF MUSIC", "A MAN FOR ALL SEASONS", "IN THE HEAT OF THE NIGHT", "OLIVER", "MIDNIGHT COWBOY", "PATTON", "THE FRENCH CONNECTION", "THE GODFATHER", "THE STING", "THE GODFATHER PART II", "ROCKY", "ANNIE HALL", "THE DEER HUNTER", "KRAMER VS KRAMER", "ORDINARY PEOPLE", "CHARIOTS OF FIRE", "GANDHI", "TERMS OF ENDEARMENT", "AMADEUS", "OUT OF AFRICA", "PLATOON", "THE LAST EMPEROR", "RAIN MAN", "DRIVING MISS DAISY", "DANCES WITH WOLVES", "THE SILENCE OF THE LAMBS", "UNFORGIVEN", "SCHINDLERS LIST", "FORREST GUMP", "BRAVEHEART", "THE ENGLISH PATIENT", "TITANIC", "SHAKESPEARE IN LOVE", "AMERICAN BEAUTY", "GLADIATOR", "A BEAUTIFUL MIND", "CHICAGO", "LORD OF THE RINGS", "MILLION DOLLAR BABY", "CRASH", "THE DEPARTED", "NO COUNTRY FOR OLD MEN", "SLUMDOG MILLIONAIRE", "THE HURT LOCKER", "THE KINGS SPEECH", "THE ARTIST", "ARGO", "TWELVE YEARS A SLAVE", "BIRDMAN", "SPOTLIGHT", "MOONLIGHT", "THE SHAPE OF WATER", "GREEN BOOK", "PARASITE", "NOMADLAND", "CODA", "MODERN TIMES", "THE PETRIFIED FOREST", "THE GOOD EARTH", "LOST HORIZON", "THE PRISONER OF ZENDA", "TOPPER", "THE ADVENTURES OF ROBIN HOOD", "BRINGING UP BABY", "THE LADY VANISHES", "YOU CANT TAKE IT WITH YOU", "DESTRY RIDES AGAIN", "THE FOUR FEATHERS", "GOODBYE MR CHIPS", "GUNGA DIN", "THE HUNCHBACK OF NOTRE DAME", "MR SMITH GOES TO WASHINGTON", "NINOTCHKA", "STAGECOACH", "THE WIZARD OF OZ", "WUTHERING HEIGHTS", "ABE LINCOLN IN ILLINOIS", "FANTASIA", "FOREIGN CORRESPONDENT", "THE GRAPES OF WRATH", "THE GREAT DICTATOR", "HIS GIRL FRIDAY", "THE MARK OF ZORRO", "THE PHILADELPHIA STORY", "PRIDE AND PREJUDICE", "REBECCA", "THE SEA HAWK", "THE SHOP AROUND THE CORNER", "THE THIEF OF BAGDAD", "CITIZEN KANE", "HERE COMES MR JORDAN", "HIGH SIERRA", "HOW GREEN WAS MY VALLEY", "THE MALTESE FALCON", "MEET JOHN DOE", "THE SEA WOLF", "SERGEANT YORK", "SUSPICION", "THAT HAMILTON WOMAN", "THE WOLF MAN", "CASABLANCA", "KINGS ROW", "THE MAGNIFICENT AMBERSONS", "NOW VOYAGER", "THE PRIDE OF THE YANKEES", "RANDOM HARVEST", "SABOTEUR", "TO BE OR NOT TO BE", "FOR WHOM THE BELL TOLLS", "HEAVEN CAN WAIT", "JANE EYRE", "THE OX BOW INCIDENT", "PHANTOM OF THE OPERA", "SHADOW OF A DOUBT", "THE SONG OF BERNADETTE", "WATCH ON THE RHINE", "ARSENIC AND OLD LACE", "DOUBLE INDEMNITY", "GASLIGHT", "GOING MY WAY", "HENRY V", "LAURA", "LIFEBOAT", "MEET ME IN ST LOUIS", "MURDER MY SWEET", "NATIONAL VELVET", "TO HAVE AND HAVE NOT", "AND THEN THERE WERE NONE", "THE BELLS OF ST MARYS", "THE BODY SNATCHER", "LEAVE HER TO HEAVEN", "MILDRED PIERCE", "THE PICTURE OF DORIAN GRAY", "SPELLBOUND", "A TREE GROWS IN BROOKLYN", "THE BEST YEARS OF OUR LIVES", "THE BIG SLEEP", "ITS A WONDERFUL LIFE", "MY DARLING CLEMENTINE", "NOTORIOUS", "THE POSTMAN ALWAYS RINGS TWICE", "THE SPIRAL STAIRCASE", "THE STRANGER", "THE YEARLING", "THE BACHELOR AND THE BOBBY SOXER", "THE BISHOPS WIFE", "BLACK NARCISSUS", "CROSSFIRE", "DARK PASSAGE", "A DOUBLE LIFE", "THE FARMERS DAUGHTER", "GENTLEMANS AGREEMENT", "THE GHOST AND MRS MUIR", "THE SECRET LIFE OF WALTER MITTY", "I REMEMBER MAMA", "JOHNNY BELINDA", "KEY LARGO", "THE LADY FROM SHANGHAI", "RED RIVER", "THE RED SHOES", "ROPE", "THE SNAKE PIT", "THE TREASURE OF THE SIERRA MADRE", "ALL THE KINGS MEN", "THE FOUNTAINHEAD", "THE HEIRESS", "KIND HEARTS AND CORONETS", "ON THE TOWN", "SHE WORE A YELLOW RIBBON", "THE THIRD MAN", "TWELVE OCLOCK HIGH", "WHITE HEAT", "ALL ABOUT EVE", "THE ASPHALT JUNGLE", "BORN YESTERDAY", "FATHER OF THE BRIDE", "HARVEY", "RASHOMON", "SUNSET BOULEVARD", "THE AFRICAN QUEEN", "AN AMERICAN IN PARIS", "A CHRISTMAS CAROL", "THE DAY THE EARTH STOOD STILL", "A PLACE IN THE SUN", "QUO VADIS", "STRANGERS ON A TRAIN", "A STREETCAR NAMED DESIRE", "THE THING", "THE GREATEST SHOW ON EARTH", "HIGH NOON", "THE QUIET MAN", "SINGIN IN THE RAIN", "I CONFESS", "JULIUS CAESAR", "NIAGARA", "THE ROBE", "ROMAN HOLIDAY", "SHANE", "THE WAR OF THE WORLDS", "THE CAINE MUTINY", "CREATURE FROM THE BLACK LAGOON", "DIAM M FOR MURDER", "THE FAR COUNTRY", "GODZILLA", "REAR WINDOW", "SABRINA", "A STAR IS BORN", "BAD DAY AT BLACK ROCK", "BLACKBOARD JUNGLE", "THE COURT JESTER", "EAST OF EDEN", "GUYS AND DOLLS", "THE LADYKILLERS", "MISTER ROBERTS", "OKLAHOMA", "PICNIC", "REBEL WITHOUT A CAUSE", "RICHARD III", "TO CATCH A THIEF", "ANASTASIA", "FRIENDLY PERSUASION", "GIANT", "HIGH SOCIETY", "INVASION OF THE BODY SNATCHERS", "THE KING AND I", "THE MAN WHO KNEW TOO MUCH", "MOBY DICK", "THE SEARCHERS", "THE TEN COMMANDMENTS", "AN AFFAIR TO REMEMBER", "A FACE IN THE CROWD", "GUNFIGHT AT THE OK CORRAL", "THE INCREDIBLE SHRINKING MAN", "PATHS OF GLORY", "THE THREE FACES OF EVE", "TWELVE ANGRY MEN", "WILD STRAWBERRIES", "WITNESS FOR THE PROSECUTION", "AUNTIE MAME", "THE BIG COUNTRY", "TOUCH OF EVIL", "VERTIGO", "ANATOMY OF A MURDER", "NORTH BY NORTHWEST", "RIO BRAVO", "SOME LIKE IT HOT", "ELMER GANTRY", "INHERIT THE WIND", "THE MAGNIFICENT SEVEN", "PSYCHO", "SPARTACUS", "THE SUNDOWNERS", "BREAKFAST AT TIFFANYS", "THE GUNS OF NAVARONE", "JUDGEMENT AT NUREMBURG", "SPLENDOR IN THE GRASS", "BILLY BUDD", "CAPE FEAR", "DR NO", "HOW THE WEST WAS WON", "LOLITA", "THE LONGEST DAY", "THE MAN WHO SHOT LIBERTY VALANCE", "THE MANCHURIAN CANDIDATE", "THE MIRACLE WORKER", "TO KILL A MOCKINGBIRD", "WHAT EVER HAPPENED TO BABY JANE", "THE BIRDS", "BYE BYE BIRDIE", "CHARADE", "FROM RUSSIA WITH LOVE", "THE HAUNTING", "LILIES OF THE FIELD", "THE NUTTY PROFESSOR", "THE PINK PANTHER", "TOM JONES", "DR STRANGELOVE", "FAIL SAFE", "GOLDFINGER", "A HARD DAYS NIGHT", "MARNIE", "MARY POPPINS", "MY FAIR LADY", "THE NIGHT OF THE IGUANA", "THE PAWNBROKER", "A SHOT IN THE DARK", "ZORBA THE GREEK", "ZULU", "DOCTOR ZHIVAGO", "HELP", "BORN FREE", "FANTASTIC VOYAGE", "BONNIE AND CLYDE", "COOL HAND LUKE", "THE DIRTY DOZEN", "THE GRADUATE", "GUESS WHOS COMING TO DINNER", "IN THE HEAT OF THE NIGHT", "WAIT UNTIL DARK", "BULLIT", "CHARLY", "FUNNY GIRL", "THE LION IN WINTER", "NIGHT OF THE LIVING DEAD", "PLANET OF THE APES", "THE PRODUCERS", "ROSEMARYS BABY", "THE THOMAS CROWN AFFAIR", "BUTCH CASSIDY AND THE SUNDANCE KID", "EASY RIDER", "THE PRIME OF MISS JEAN BRODIE", "TRUE GRIT", "THE WILD BUNCH", "FIVE EASY PIECES", "A CLOCKWORK ORANGE", "DEATH IN VENICE", "DIRTY HARRY", "FIDDLE ON THE ROOF", "HAROLD AND MAUDE", "THE LAST PICTURE SHOW", "NICHOLAS AND ALEXANDRA", "PLAY MISTY FOR ME", "SHAFT", "SUNDAY BLOODY SUNDAY", "CABARET", "DELIVERANCE", "FRENZY", "LAST TANGO IN PARIS", "SLEUTH", "SOUNDER", "SUPER FLY", "AMERICAN GRAFFITI", "THE DAY OF THE JACKAL", "ENTER THE DRAGON", "THE EXORCIST", "HIGH PLAINS DRIFTER", "MEAN STREETS", "THE PAPER CHASE", "PAPER MOON", "PAPILLON", "SERPICO", "SLEEPER", "BLAZING SADDLES", "CHINATOWN", "THE CONVERSATION", "HARRY AND TONTO", "THE TOWERING INFERNO", "YOUNG FRANKENSTEIN", "BARRY LYNDON", "DOG DAY AFTERNOON", "JAWS", "THE MAN WHO WOULD BE KING", "MONTY PYTHON AND THE HOLY GRAIL", "ALL THE PRESIDENTS MEN", "MARATHON MAN", "NETWORK", "THE OMEN", "TAXI DRIVER", "CLOSE ENCOUNTERS OF THE THIRD KIND", "SATURDAY NIGHT FEVER", "THE SPY WHO LOVED ME", "STAR WARS", "COMING HOME", "MIDNIGHT EXPRESS", "WATERSHIP DOWN", "ALIEN", "APOCALYPSE NOW", "BEING THERE", "THE CHINA SYNDROME", "NORMA RAE", "RAGING BULL", "THE SHINING", "ARTHUR", "BODY HEAT", "DAS BOOT", "GALLIPOLI", "THE ROAD WARRIOR", "MY DINNER WITH ANDRE", "RAGTIME", "RAIDERS OF THE LOST ARK", "BLADE RUNNER", "DINER", "E T THE EXTRA TERRESTRIAL", "AN OFFICER AND A GENTLEMAN", "POLTERGEIST", "SOPHIES CHOICE", "TOOTSIE", "THE VERDICT", "THE BIG CHILL", "A CHRISTMAS STORY", "FLASHDANCE", "RETURN OF THE JEDI", "THE RIGHT STUFF", "RISKY BUSINESS", "SUDDEN IMPACT", "TENDER MERCIES", "GHOSTBUSTERS", "THE KILLING FIELDS", "THE NATURAL", "A PASSAGE TO INDIA", "ROMANCING THE STONE", "THE TERMINATOR", "THIS IS SPINAL TAP", "BACK TO THE FUTURE", "THE BREAKFAST CLUB", "THE COLOR PURPLE", "PALE RIDER", "PRIZZIS HONOR", "A ROOM WITH A VIEW", "WITNESS", "ALIENS", "CHILDREN OF A LESSER GOD", "THE COLOR OF MONEY", "CROCODILE DUNDEE", "THE FLY", "HANNAH AND HER SISTERS", "THE MISSION", "PLATOON", "STAND BY ME", "TOP GUN", "DIRTY DANCING", "FATAL ATTRACTION", "FULL METAL JACKET", "GOOD MORNING VIETNAM", "THE LAST EMPEROR", "LETHAL WEAPON", "MOONSTRUCK", "PREDATOR", "THE PRINCESS BRIDE", "SUSPECT", "THE UNTOUCHABLES", "THE ACCIDENTAL TOURIST", "BULL DURHAM", "CINEMA PARADISO", "DANGEROUS LIAISONS", "DIE HARD", "A FISH CALLED WANDA", "MISSISSIPPI BURNING", "WHO FRAMED ROGER RABBIT", "THE ABYSS", "BATMAN", "BORN ON THE FOURTH OF JULY", "DEAD POETS SOCIETY", "DO THE RIGHT THING", "DRIVING MISS DAISY", "FIELD OF DREAMS", "GLORY", "HENRY V", "MY LEFT FOOT", "WHEN HARRY MET SALLY", "AWAKENINGS", "DANCES WITH WOLVES", "EDWARD SCISSORHANDS", "GOODFELLAS", "HOME ALONE", "PRESUMED INNOCENT", "PRETTY WOMAN", "REVERSAL OF FORTUNE", "TOTAL RECALL", "CITY SLICKERS", "FRIED GREEN TOMATOS", "THELMA AND LOUISE", "ALADDIN", "BASIC INSTINCT", "A FEW GOOD MEN", "THE LAST OF THE MOHICANS", "MY COUSIN VINNY", "MALCOLM X", "A RIVER RUNS THROUGH IT", "SCENT OF WOMAN", "THE FUGITIVE", "GROUNDHOG DAY", "IN THE NAME OF THE FATHER", "THE JOY LUCK CLUB", "JURASSIC PARK", "MRS DOUBTFIRE", "PHILADELPHIA", "THE PIANO", "THE REMAINS OF THE DAY", "SLEEPLESS IN SEATTLE", "HOOP DREAMS", "THE LION KING", "THE MADNESS OF KING GEORGE", "PULP FICTION", "THE SHAWSHANK REDEMPTION", "TRIAL BY JURY", "TRUE LIES", "THE BRIDGES OF MADISON COUNTY", "CASINO", "GOLDENEYE", "LEAVING LAS VEGAS", "SENSE AND SENSIBILITY", "TOY STORY", "DR NO", "FROM RUSSIA WITH LOVE", "THUNDERBALL", "DIAMONDS ARE FOREVER", "YOU ONLY LIVE TWICE", "ON HER MAJESTYS SECRET SERVICE", "LIVE AND LET DIE", "THE SPY WHO LOVED ME", "FOR YOUR EYES ONLY", "A VIEW TO A KILL", "THE LIVING DAYLIGHTS", "LICENSE TO KILL", "THE MAN WITH THE GOLDEN GUN", "THE SPY WHO LOVED ME", "MOONRAKER", "OCTOPUSSY", "NEVER SAY NEVER AGAIN", "FARGO", "INDEPENDENCE DAY", "JERRY MAGUIRE", "TWISTER", "AMISTAD", "GOOD WILL HUNTING", "TITANIC", "THE BIG LEBOWSKI", "SAVING PRIVATE RYAN", "THERES SOMETHING ABOUT MARY", "BEING JOHN MALKOVICH", "THE BLAIR WITCH PROJECT", "THE MATRIX", "THE SIXTH SENSE", "CROUCHING TIGER HIDDEN DRAGON", "ERIN BROCKOVICH"]
     },
     { 
       cat: "Movie Characters",
@@ -183,7 +183,7 @@ let protoWordsArray = [
   { 
   
     cat: "World Capitals",
-    sel: false,
+    sel: true,
     parent: "",
     numOfItems: 0,
     items: ["KABUL", "TIRANA", "ALGIERS", "ANDORRA LA VELLA", "LUANDA", "BUENOS AIRES", "YEREVAN", "CANBERRA", "VIENNA", "BAKU", "NASSAU", "DHAKA", "MINSK", "BRUSSELS", "LA PAZ", "SARAJEVO", "BRASILIA", "SOFIA", "PHNOM PENH", "OTTAWA", "SANTIAGO", "BEIJING", "BOGOTA", "KINSHASA", "BRAZZAVILLE", "SAN JOSE", "ZAGREB", "HAVANA", "NICOSIA", "PRAGUE", "COPENHAGEN", "SANTO DOMINGO", "QUITO", "CAIRO", "SAN SALVADOR", "TALLINN", "ADDIS ABABA","HELSINKI", "PARIS", "TBILISI", "BERLIN", "ATHENS", "GUATEMALA CITY", "PORT AU PRINCE", "BUDAPEST", "REYKJAVIK", "NEW DELHI", "JAKARTA", "TEHRAN", "BAGHAD", "DUBLIN", "JERUSALEM", "ROME", "KINGSTON", "TOKYO", "AMMAN", "NAIROBI", "PRISTINA", "KUWAIT CITY", "VIENTIANE", "RIGA", "BEIRUT", "MONROVIA", "TRIPOLI", "VADUZ", "VILNIUS", "LUXEMBOURG", "KUALA LUMPUR", "MEXICO CITY", "ULAANBAATAR", "RABAT", "KATHMANDU", "AMSTERDAM", "WELLINGTON", "MANAGUA", "PYONGYANG", "OSLO", "MUSCAT", "ISLAMABAD", "PANAMA CITY", "ASUNCION", "LIMA", "MANILA", "WARSAW", "LISBON", "BUCHAREST", "MOSCOW", "RIYADH", "DAKAR", "EDINBURGH", "BELGRADE", "BRATISLAVA", "LJUBLJANA", "MOGADISHU", "CAPE TOWN", "SEOUL", "MADRID", "KHARTOUM", "STOCKHOLM", "BERN", "DAMASCUS", "TAIPEI", "BANGKOK", "TUNIS", "ANKARA", "KAMPALA", "KYIV", "KIEV", "ABU DHABI", "LONDON", "WASHINGTON DC", "MONTEVIDEO", "TASHKENT","CARACAS", "HANOI"]
@@ -194,14 +194,17 @@ let protoWordsArray = [
     parent: "",
     numOfItems: 0,
     items: ["RIO DE JANEIRO", "MELBOURNE", "SYDNEY", "ADELAIDE", "PERTH", "INNSBRUCK", "SALZBURG", "GHENT", "BRUGES", "SAO PAOLO", "MONTREAL", "QUEBEC", "TORONTO", "CALGARY", "WINNIPEG", "VANCOUVER", "SHANGHAI", "ALEXANDRIA", "MARSEILLE", "MUNICH", "POTSDAM", "DUSSELDORF", "HAMBURG", "FRANKFURT", "MUMBAI", "CALCUTTA", "TEL AVIV", "BETHLEHEM", "FLORENCE", "MILAN", "VENICE", "YOKOHAMA", "KYOTO", "OSAKA", "ACAPULCO", "CASABLANCA", "ROTTERDAM", "THE HAGUE", "CHRISTCHURCH", "KARACHI", "ISTANBUL", "KHARKOV", "LVIV", "LVOV", "MANCHESTER", "LIVERPOOL", "OXFORD", "CAMBRIDGE", "ABERDEEN", "GLASGOW", "ZURICH", "GENEVA", "INTERLAKEN", "LUCERNE", "BARCELONA", "ALEXANDRIA", "SAINT PETERSBURG", "SAPPORO", "DAMASCUS", "NAPLES", "MECCA", "HIROSHIMA", "TURIN", "AUKLAND", "ANTWERP"]
-    }, 
+    }
+    /*, 
     { 
-      cat: "Testing",
-      sel: true,
+      cat: "Surprise",
+      sel: false,
       parent: "",
       numOfItems: 0,
-      items: ["THE WRECK OF THE EDMUND FITZGERALD"]
-      }
+      items: ["STORE MANAGER", "SECRETARY", "ACTRESS", "ARTIST", "BOOKKEEPER", "GAS STATION ATTENDANT", "MOVIE DIRECTOR", "SCHOOLTEACHER", "HAT CHECK GIRL", "HEADWAITER", "NEWSPAPER REPORTER", "PLAYBOY", "RACKETEER", "ATOMIC SCIENTIST", "BANK PRESIDENT", "CAR SALESMAN", "DOCTOR", "FIGHT PROMOTER", "GAMBLER", "LAUNDRESS", "NIGHT CLUB SINGER", "SALES GIRL", "TAXI DRIVER", "TROMBONE PLAYER"],
+      pics1: ["./imgs/storemanager1.png", "./imgs/secretary1.png", "./imgs/actress1.png", "./imgs/artist1.png", "./imgs/bookkeeper1.png", "./imgs/gasstationattendant1.png", "./imgs/moviedirector1.png", "./imgs/schoolteacher1.png", "./imgs/hatcheckgirl1.png", "./imgs/headwaiter1.png", "./imgs/newspaperreporter1.png", "./imgs/playboy1.png", "./imgs/racketeer1.png", "./imgs/atomicscientist1.png", "./imgs/bankpresident1.png", "./imgs/carsalesman1.png", "./imgs/doctor1.png", "./imgs/fightpromoter1.png", "./imgs/gambler1.png", "./imgs/laundress1.png", "./imgs/nightclubsinger1.png", "./imgs/salesgirl1.png", "./imgs/taxidriver1.png", "./imgs/tromboneplayer1.png"],
+      pics2: ["./imgs/storemanager2.png", "./imgs/secretary2.png", "./imgs/actress2.png", "./imgs/artist2.png", "./imgs/bookkeeper2.png", "./imgs/gasstationattendant2.png", "./imgs/moviedirector2.png", "./imgs/schoolteacher2.png", "./imgs/hatcheckgirl2.png", "./imgs/headwaiter2.png", "./imgs/newspaperreporter2.png", "./imgs/playboy2.png", "./imgs/racketeer2.png", "./imgs/atomicscientist2.png", "./imgs/bankpresident2.png", "./imgs/carsalesman2.png", "./imgs/doctor2.png", "./imgs/fightpromoter2.png", "./imgs/gambler2.png", "./imgs/laundress2.png", "./imgs/nightclubsinger2.png", "./imgs/salesgirl2.png", "./imgs/taxidriver2.png", "./imgs/tromboneplayer2.png"]
+      }*/
 
   /*,
   , 
@@ -244,19 +247,30 @@ const audios=[ {name: "default",
               }
              ]
 
-let helpText = `This version of WORDLE, plays like a cross between Wordle and Wheel of Fortune. Instead of solving for a 5 letter word, you will be trying to figure out an item belonging to a particular category. The answer can be anywhere from 4 to 20+ characters and can include spaces. The default category is US Presidents, but you can select your own by clicking on the 2nd icon from the right. All available categories will be displayed along with the number of items in that category. The active ones will be in black, the inactive in gray. Click to toggle each category. As in the original WORDLE, stats are provided. Click on the bar-graph icon for a summary, then i, for more info. 
+let helpText = `This version of WORDLE, plays like a cross between Wordle and Wheel of Fortune. Instead of solving for a 5 letter word, you will be trying to figure out an item belonging to a particular category. The answer can be anywhere from 4 to 20+ characters and can include spaces. The default category is World Capitals, but you can select your own by clicking on the 2nd icon from the right. All available categories will be displayed along with the number of items in that category. The active ones will be in black, the inactive in gray. Click to toggle each category. As in the original WORDLE, stats are provided. Click on the bar-graph icon for a summary, then i, for more info. 
 TIPS - As far as game play goes, here a few differences from the original and some suggestions. First off, for any response over 10 characters, you will get 8 guesses. The game does not check for valid words, names, or places, so gibberish is allowed. In fact, it may be your best strategy. Long solutions will likely be multi-word solutions, and you may want to find those word breaks by entering all spaces for your first guess. (Click the duplicate icon and spaces will be filled in from your current position in the row). Green spaces will indicate the word breaks. If you select multiple categories and are flummoxed, click on the mag glass icon to display the random category chosen by the game.
 ***Solving tip - On especially long wordles, after several guesses have been made, the game board can look quite busy. Click or tap the title 'WORLDLE' and the current row will be filled with all of the letters that you have correctly guessed. This often results in an a-ha moment when the solution jumps out at you. Then backup thru the word via the delete key and then fill in the blanks with your solution. 
 --Note - on narrow screens, wordles over 21 letters will be cut off at 21.
 ***Customize - You can customize your WORLDLE experience to some degree by selecting the gear shaped icon. 
---Choose your background - The top icon (with 6 little pics inside), will select a random background pic for each session. Below that are 6 photos, choose any one of them and that will be your background. There is also an input field where you can paste a link to any image on the web that you can get a direct link to. Paste in the link, press enter and your background will change. This works well on desktops but is hit or miss on mobile. 
---If you prefer shorter WORLDLES to solve, you can limit the maximum number of characters to anything 5 and over, the lower you go, available categories will be limited.
+--Choose your background - The top icon (with 6 little pics inside), will select a random background pic for each session. Below that are 6 photos, choose any one of them and that will be your background. There is also an input field where you can paste a link to any image on the web that you can get a direct link to. Paste in the link. This works well on desktops but getting a proper link on mobile is hit or miss. 
+--If you prefer shorter WORLDLES to solve, you can limit the maximum number of characters to anything 5 and over, the lower you go, the less the number of items in each category will be.
 --Set your background audio to any of those listed. You can always turn off your background audio via the audio icon (third from the right.)
 --Chameleon Mode offers an additional twist to your play. Instead of the traditional Wordle tile colors of dark gray, yellow and green, Chameleon Mode will set random colors for those tiles that are usually yellow and green. Dark gray for 'incorrect' will remain as usual, but the tile color for correctly placed letters and those that are contained within the word but not correctly placed will vary, and you have to figure that out.
 --Free Spaces Reveal - Selecting this option will let you reveal all spaces in the wordle without using up a guess.
 ----------------
 ----------------
 `
+
+
+
+// Check date to be set in portfolio - if not todays date - redirect to home page
+let todaysDate =  new Date().toJSON().split("T")[0];
+let storedDate = (window.localStorage.getItem('todaysDate'))
+/*
+if (todaysDate != storedDate){
+  window.location.href = "https://steveswebdepot.tech/"
+}*/
+
 
 let viewHelpText = `Welcome to WORLDLE. Please read the help(?) for info and tips about the game`
 
@@ -304,6 +318,11 @@ let randomWordle = 0;
 let revealLetterNum = 0;
 const messageContainerEl = document.getElementById('message-container')
 
+/*let rotateDeg = 0;
+let increment = 1;
+let intervalHandle = 0;*/
+const imageEl2 = document.getElementById("img2")
+
 /*let categoryPreferences = [
   true, false, false, false, false, false, false, false, false, false, false, false, false, false, false,
   false, false, false, false, false, false, false, false, false, false, false, false, false
@@ -320,17 +339,6 @@ let resultObj = {
 }
 
 
-// Check date to be set in portfolio - if not todays date - redirect to home page
-// this is current
-let todaysDate =  new Date().toJSON().split("T")[0];
-console.log("todays date = " + todaysDate)
-
-let storedDate = (window.localStorage.getItem('todaysDate'))
-console.log("stored date = " + storedDate)
-
-if (todaysDate != storedDate){
-  window.location.href = "https://stevezadev.github.io/portfolio/"
-}
 
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -343,6 +351,7 @@ document.addEventListener("DOMContentLoaded", () => {
     initCategoriesModalBtn();
    
     initLook();
+    initLieDetectorModal();
     
 
 
@@ -371,7 +380,6 @@ document.addEventListener("DOMContentLoaded", () => {
      })
 
      randCatEl.addEventListener("click", ({ target }) => {
-       console.log("clicked on category display");
        if (gameInProgress){
         if (wordsArray){
         messageContainerEl.innerText = "Current category is " + wordsArray[randomArray].cat;
@@ -434,7 +442,7 @@ gameInProgress = true;
       }
     }
   }
-  console.log("Checking wordsArray which is equal to " + wordsArray)
+
   if (wordsArray.length === 0){
     messageContainerEl.innerText = "Please select at least 1 category";
     return;
@@ -485,45 +493,20 @@ gameInProgress = true;
   let count = 0;
   do {
     randomWordle = Math.floor(Math.random()*(wordsArray[randomArray].items).length);
-    console.log ("*within searchingForWord do loop - randomWordle = " + randomWordle )
-    console.log ("*length of word is  = " + (wordsArray[randomArray].items[randomWordle]).length)
-    console.log ("*maxchar  = " + maxCharacters)
     count++;
  //   if ((wordsArray[randomArray].items[randomWordle]).length < Number(maxCharacters + 1)){
       if ((wordsArray[randomArray].items[randomWordle]).length < Number(maxCharacters) + 1 ){
       searchingForWord = false;
-      console.log("1 set search to false")
     } else {
       if (count > 3500){
-        console.log ("count > 3500")
-        wordsArray[randomArray].items[randomWordle] = wordsArray[randomArray].items[randomWordle].slice(0, maxCharacters);
-      console.log("2 set search to false")
-
+       wordsArray[randomArray].items[randomWordle] = wordsArray[randomArray].items[randomWordle].slice(0, maxCharacters);
+   
         searchingForWord = false;
       }
     }
   }
   while (searchingForWord);
   
-  console.log("randomArray = " + randomArray) 
-  console.log("wordsArray category = " + wordsArray[randomArray].cat)
-  console.log("randomWordle = " + randomWordle) 
- // console.log(wordsArray[randomArray] + "length of array = " + wordsArray[randomArray].length)
- // numofLetters = (wordsArray[randomArray].items[randomWordle]).length;
-//  console.log(wordsArray[randomArray][randomWordle] + " has " + numofLetters + " letters in it")
-  //if wordle in localstorage that means game was interrupted start at the beginning with that wordle
-  // and display message to that effect
-
-  /*
-  wordle = window.localStorage.getItem("wordle");
-  if (wordle){
-    messageContainerEl.innerText = "Last Wordle game was interrupted - will start over with the same Wordle";
-    setTimeout(function(){
-  }, 4500);
-  } else {
-    wordle = wordsArray[randomArray].items[randomWordle];
-    window.localStorage.setItem("wordle", wordle);
-  }*/
 
   guessedWords = [[]]
   availableSpace = 1; 
@@ -566,10 +549,8 @@ allElements.forEach((element) => {
 //  loadLocalStorage();
   // Check to see if keyboard click event listener has already been set via the first game of the session  
   if (!keyboardClicks){
-    console.log("about to call addKeyboard")
     addKeyboardClicks();
     document.addEventListener('keydown', function(event) {
-      console.log ("key pressed was " + event.key)
       handleKeystroke(event.key)
       });
   }
@@ -588,17 +569,13 @@ allElements.forEach((element) => {
   }
 
   function updateGuessedLetters(letter){
-    console.log("guessedwordsA = " + guessedWords)
-    console.log("updateGuessedLetter letter = " + letter)
-    console.log("availableSpace = " + availableSpace)
+
     const currentWordArr = getCurrentWordArr()
-    console.log('current array = ' + currentWordArr)
-    console.log("numofLetters = " + numofLetters )
+
     if (currentWordArr && currentWordArr.length < numofLetters){
       currentWordArr.push(letter)
       const availableSpaceEl = document.getElementById(availableSpace)
       availableSpace++;
-      console.log("availableSpace = " + availableSpace)
       availableSpaceEl.textContent = letter;
     }
   }
@@ -661,10 +638,9 @@ allElements.forEach((element) => {
 
 
   function handleSubmitWord(){
-    console.log("entered handlesubmitword ")
     const currentWordArr = getCurrentWordArr();
     const guessedWord = currentWordArr.join("");
-    console.log("guessedwords1 = " + guessedWords)
+
     if (guessedWord.length !== numofLetters){
       messageContainerEl.innerText = (`You entered ${currentWordArr.length} characters which is less than the ${numofLetters} needed`);
       return;
@@ -680,18 +656,14 @@ allElements.forEach((element) => {
     const guess = [];
   
     currentWordArr.forEach(tile => {
-      console.log("pushing letter onto guess array - letter = " + tile)
+
     //  guess.push({letter: tile, color: 'dontknow'});
       guess.push({letter: tile, color: 'incorrect-letter'});
     } )
 
-    console.log("");
-    console.log("");
-    console.log("About to loop thru to look for Greys")
     guess.forEach(guess => {
       if (!checkWordle.includes(guess.letter.toUpperCase())){
         guess.color = 'incorrect-letter'
-        console.log ("set grey overlay")
         }
     })
 
@@ -699,41 +671,35 @@ allElements.forEach((element) => {
 
 
 
-    console.log("About to loop thru to look for Greens")
+  
     guess.forEach((guess, index) => {
-      console.log("guess letter = " + guess.letter + "   wordle letter = " + wordle[index])
+
       if (guess.letter == wordle[index].toLowerCase()){
         guess.color = 'correct-letter-in-place'
-   //     console.log("guess letter2 = " + guess.letter + "   wordle letter = " + wordle[index])
-        console.log ("set green overlay")
+
         checkWordle = checkWordle.replace(guess.letter.toUpperCase(), '')
-        console.log ("guess array = " + guess + " checkWordle = " + checkWordle)
-        console.log (" ")
+
       }
     })
 
-    console.log("COLORS AFTER GREEN LOGIC")
+
     guess.forEach(guess => {
-      console.log("guess letter = " + guess.letter);
-      console.log("guess color = " + guess.color);
+
     })
 
 
-    console.log(" ");
-    console.log(" ");
-    console.log("About to loop thru to look for Yellows")
+
     guess.forEach(guess => {
-      console.log("guess letter = " + guess.letter);
+ 
       if (checkWordle.includes(guess.letter.toUpperCase())){
-        console.log ("guess.color before setting to yellow = " + guess.color)
+
         if (guess.color === "correct-letter-in-place"){
 
         } else {
         guess.color = 'correct-letter'
-        console.log ("set yellow overlay")
+
         checkWordle = checkWordle.replace(guess.letter.toUpperCase(), '')
-        console.log ("guess array = " + guess + " checkWordle = " + checkWordle)
-        console.log (" ")
+
       }
       }
     })
@@ -751,27 +717,12 @@ allElements.forEach((element) => {
     localStorage.setItem("availableSpace", availableSpace);
 
 
-
-
-
-
-
-
     currentWordArr.forEach((tile, index) => {
     
       setTimeout(() => {
-    //    tile.classList.add("animate__flipInX")
-    //    tile.classList.add(guess[index].color)
+
         const letterId = firstLetterId + index;
         const letterEl = document.getElementById(letterId);
-     //   if (letter === " "){
-     //     letter = "space"
-     //   }
-     //  let keyboardLetter = letter.toLowerCase();
-     //  const keyboardLetterEl = document.querySelector("[data-key=" + keyboardLetter + "]");
- 
-
-     //   console.log("keyboard letter = " + keyboardLetterEl)
         letterEl.classList.add(guess[index].color)
         letterEl.classList.add("animate__flipInX")
     //    addColorToKey(guess[index].letter, guess[index].color)
@@ -780,7 +731,7 @@ allElements.forEach((element) => {
         }
 
     const keyboardEl = document.querySelector(`[data-key=${tile}]`);
-    console.log ("keyboardEl = " + keyboardEl + " tile = " + tile);
+
     keyboardEl.classList.add(guess[index].color);
 
         if (index === (numofLetters-1)){
@@ -797,12 +748,11 @@ allElements.forEach((element) => {
     window.localStorage.setItem('guessedWordCount', guessedWordCount);
 
     let date = new  Date();
-//    resultObj.date = date.toString()
+
     resultObj.date = new Date();
-    console.log("New date = " + resultObj.date)
-    console.log("New date is of type " + typeof(resultObj.date))
+
     resultObj.wordle = wordle;
-    console.log("guessed word = " + guessedWord + "  wordle = " + wordle)
+
     let guessedWordUpper = guessedWord.toUpperCase();
     if (guessedWordUpper === wordle){
       messageContainerEl.innerText = "Congratulations!"
@@ -820,10 +770,9 @@ allElements.forEach((element) => {
       let resultsArrayTemp = JSON.parse(window.localStorage.getItem('results'));
       if (resultsArrayTemp){
           resultsArray = JSON.parse(window.localStorage.getItem('results'));
-          console.log("New date right before push = " + resultObj.date)
+
           resultsArray.push(resultObj);
-          console.log("Array after push = " + resultsArray);
-          console.log ("item date just added = " + resultsArray[resultsArray.length-1].date);
+
           window.localStorage.setItem('results', JSON.stringify(resultsArray));
       } else {
         resultsArray[0] = resultObj;
@@ -846,7 +795,22 @@ allElements.forEach((element) => {
       if ((Number(currentStreak)+1) > Number(maxStreak)){
    //     window.alert("updating max")
         window.localStorage.setItem("maxStreak", Number(currentStreak) + 1);
-      }
+        }
+
+      if (wordsArray[randomArray].cat === "Surprise"){
+        img1El = document.getElementById("img1");
+        img1El.src = wordsArray[randomArray].pics1[randomWordle]
+        img2El = document.getElementById("img2");
+        img2El.src = wordsArray[randomArray].pics2[randomWordle]
+        const lieDetectorModal = document.getElementById("lie-detector-modal");
+        setTimeout(function(){
+          lieDetectorModal.style.display = "block";
+          rotateDeg = 0;
+        //  intervalHandle = setInterval(rotateSuspect, 35);
+          imageEl2.classList.add('rotate');
+        }, 2000);
+      };
+        
       updateTotalGames();
       resetGameState();
     //  removeKeyboardListeners();
@@ -893,60 +857,18 @@ allElements.forEach((element) => {
     }
 
     guess.forEach(guess => {
-      console.log("letter = " + guess.letter + " color = " + guess.color)
+
     }
     )
 
 
 
-    console.log("guessedwords2 = " + guessedWords)
-    guessedWords.push([]);
-    console.log("guessedwords3 = " + guessedWords)
-    console.log("Guessedwords length = " + guessedWords.length)
-
-
-   /* 
-    currentWordArr.forEach((letter, index) => {
-      setTimeout(() => {
-        const tileClass = getTileClass(letter, index, currentWordArr);
-        if (tileClass){
-          const letterId = firstLetterId + index;
-          console.log("letter = " + letter);
-          const letterEl = document.getElementById(letterId);
-       //   if (letter === " "){
-       //     letter = "space"
-       //   }
-       //  let keyboardLetter = letter.toLowerCase();
-       //  const keyboardLetterEl = document.querySelector("[data-key=" + keyboardLetter + "]");
-      //   console.log("keyboard letter = " + keyboardLetterEl)
-          letterEl.classList.add("animate__flipInX")
-          console.log ("class should have been set to flip")
-          letterEl.classList.add(tileClass)
-      //  letterEl.style = `background-color:${tileColor};border-color:${tileColor}`;
-    //    letterEl.style.backgroundColor = tileColor;
-    //    letterEl.style.borderColor = tileColor;
-    //    keyboardLetterEl.style.backgroundColor = tileColor;
-          const keyboardEl = document.querySelector(`[data-key=${letter}]`);
-          console.log ("keyboardEl = " + keyboardEl);
-          keyboardEl.classList.add(tileClass);
-        }
-      }, interval * index);  // END OF setTimeout
-    });  // END OF forEach letter in the current word
-
-    guessedWordCount += 1;
-    console.log("guessed word = " + guessedWord + "  wordle = " + wordle)
-    let guessedWordUpper = guessedWord.toUpperCase();
-    if (guessedWordUpper === wordle){
-      messageContainerEl.innerText = "Congratulations!"
-    }
-
-    if (guessedWords.length ===  numofGuesses && guessedWord !== wordle) {
-      window.alert(`Sorry, no more guesses. The wordle is ${wordle}`)
-    } 
-
 
     guessedWords.push([]);
-    console.log("Guessedwords length = " + guessedWords.length)*/
+
+
+
+
   } // END OF handleSubmitWord
 
   function updateTotalGames(){
@@ -961,9 +883,9 @@ allElements.forEach((element) => {
 
   function handleDelete(){
     const currentWordArr = getCurrentWordArr()
-    console.log(currentWordArr)
+
     if (currentWordArr.length === 0){
-      console.log("blank array")
+
       return;
     }
     currentWordArr.pop();
@@ -979,10 +901,8 @@ allElements.forEach((element) => {
 
 
   function removeKeyboardListeners(){
-    console.log("entered remove listeners")
     const keys = document.querySelectorAll(".keyboard-row button");
     for (let i = 0; i < keys.length; i++) {
-      console.log("keyboard count = " + i)
       keys[i].removeEventListener("click")
     }
    }
@@ -1030,7 +950,6 @@ allElements.forEach((element) => {
       const titleEl = document.querySelector(".title")
       titleEl.addEventListener("click", ({ target }) => {
       if (!atLeastOneGuessMade){
-         console.log("site thinks no guesses have been made")
          return;
         }
         populateRow();
@@ -1047,31 +966,27 @@ allElements.forEach((element) => {
     } // END OF Ians addKeyboardClicks 
 
 function populateRow(){
-  console.log("add code to place any green tiles from above onto the current row")
+
   const allSquaresEl = document.querySelectorAll(".square")
   const currentWordArr = getCurrentWordArr()
   guessedWords[guessedWords.length - 1] = [];
   availableSpace = guessedWordCount * numofLetters + 1;
-  console.log ("available spacei in  pop row is " + availableSpace)
+
 
 
   for (i=0; i<numofLetters; i++){
- //   for (i=0; i<4; i++){
-    // check for equal modulus values that would indicate the same column, if find correct letter in correct space class output it
-    // get id then check class
-   // element.classList.contains(class);
- //   updateGuessedLetters('x');
+
     // loop thru checking all columns except for the last
     let foundGreen = false;
     for (j=0; j<numofGuesses; j++){
     //  let idNum = Number(allSquaresEl[(i*j)-1].id)
       let idNum = (i)+(j*numofLetters)
-      console.log ("id num in populateRow function = " + idNum)
+
       if (allSquaresEl[idNum].classList.contains("correct-letter-in-place")){
-        console.log("correct letter in place - that letter is " + allSquaresEl[idNum].innerText )
+   
        /* if (j%numofLetters === i){*/
            foundGreen = (allSquaresEl[idNum].innerText.toLowerCase())
-           console.log("FOUNDGREEN SET TO " + foundGreen )
+
       /*  }*/
       } 
       } // end of for j
@@ -1090,9 +1005,7 @@ function initMisc(){
 
   function dupSpaces(e) {
     if (gameInProgress){
-      console.log("duping spaces");
-   //   const audio = new Audio ("./auds/hard-keypress.wav");  
-   //   audio.play()
+
       if (freeSpaces){
         showSpacesForFree();
       } else {
@@ -1100,18 +1013,11 @@ function initMisc(){
       for (i=1; i<maxCharacters+1; i++){
         updateGuessedLetters(' ');
       }
-      console.log("done with loop of spaces");
+
       // submit all the spaces
       handleSubmitWord();
     }
-/*      
-      availableSpace = availableSpace - numofLetters;
-      console.log("guessedWords dup1 = " + guessedWords)
-  
-      console.log("guessedWords dup2 = " + guessedWords)
-      guessedWordCount--;
-*/
-       
+   
   }
   }
 }
@@ -1158,10 +1064,9 @@ function initMisc(){
     function pressingDown(e) {
       // Start the timer
       requestAnimationFrame(timer);
-      console.log ("e key = " + e.key)
+  
       e.preventDefault();
 
-      console.log("Pressing!");
     }
 
     function notPressingDown(e) {
@@ -1169,20 +1074,18 @@ function initMisc(){
       cancelAnimationFrame(timerID);
       counter = 0;
 
-      console.log("Not pressing!");
     }
 
     //
     // Runs at 60fps when you are pressing down
     //
     function timer() {
-      console.log("Timer tick!");
 
       if (counter < pressHoldDuration) {
         timerID = requestAnimationFrame(timer);
         counter++;
       } else {
-        console.log("Press threshold reached!");
+
         itemSpace.dispatchEvent(spaceHoldEvent);
       }
     }
@@ -1195,7 +1098,6 @@ function initMisc(){
       requestAnimationFrame(timer2);
       e.preventDefault();
 
-      console.log("Pressing del!");
     }
 
     function notPressingDown2(e) {
@@ -1203,36 +1105,29 @@ function initMisc(){
       cancelAnimationFrame(timerID);
       counter = 0;
 
-      console.log("Not pressing del!");
     }
 
     //
     // Runs at 60fps when you are pressing down
     //
     function timer2() {
-      console.log("Timer2 tick!");
+ 
 
       if (counter < pressHoldDuration) {
         timerID = requestAnimationFrame(timer2);
         counter++;
       } else {
-        console.log("Del Press threshold reached!");
+  
         itemDel.dispatchEvent(delHoldEvent);
       }
     }
 
     function spaces(e) {
- //     console.log("pressHold event fired on spaces!");
-   //   for (i=1; i<maxCharacters; i++){
-   //     updateGuessedLetters('x');
-   //   }
-   //   console.log("done with loop of spaces");
-      // submit all the spaces
-      // handleSubmitWord();
+
      }
 
      function deletes(e) {
-      console.log("pressHold event fired on delete!");
+   
       for (i=1; i<maxCharacters; i++){
        handleDelete();
       }
@@ -1245,30 +1140,6 @@ function initMisc(){
 
 
 
-/*   MAY WANT TO ADD SOME OF THIS INTO ABOVE FUNCTION
-
-      var audio = new Audio("./keypress.wav");
-      audio.play();
-      //let containerEl = document.getElementById('container')
-      //containerEl.requestFullscreen();
-      if (letter === "enter" ){
-        handleSubmitWord();
-        return;
-      }
-
-      if (letter === "del" ){
-        console.log("available space = " + availableSpace)
-        handleDeleteLetter();
-        return;
-      }
-
-      if (letter === 'space'){
-        letter = ' ';
-      }
-      console.log('clicked letter = ' + letter )
-      updateGuessedWords(letter);
-    }  // END OF addKeyboardClicks 
-*/
 
 
   function handleKeystroke(letter){
@@ -1276,13 +1147,13 @@ function initMisc(){
       return;
     }
 
-    console.log ("key in handleKeystroke function - "  + letter)
+
     messageContainerEl.innerText = "";
     let containerEl = document.getElementById('container')
   //  containerEl.requestFullscreen();
 
   if (letter === "Enter" || letter === "Delete"){
-    console.log ("key in handleKeystroke function2 - "  + letter)
+
   } else {
       let alpha = "abcdefghijklmnopqurstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ ";
       let result = alpha.includes(letter);
@@ -1291,19 +1162,17 @@ function initMisc(){
       }
     }
     if (letter === "Enter" ){
-      console.log ("about to submitword")
+
       handleSubmitWord();
       return;
     }
 
     if (letter === "Delete" ){
-      console.log("available space = " + availableSpace)
+
       handleDelete();
       return;
     }
 
-
-    console.log("dont want to reach here")
     letter = letter.toLowerCase();
     updateGuessedLetters(letter);
 
@@ -1361,7 +1230,6 @@ function initHelpModal() {
 
   // When the user clicks on the button, open the modal
   btn.addEventListener("click", function () {
-    console.log("just clicked on help button")
     modal.style.display = "block";
     helpEl = document.querySelector(".modal-body")
     helpEl.innerText = helpText + "\n" + "\n"
@@ -1427,7 +1295,6 @@ function initStatsModal() {
 
   // When the user clicks on the button, open the modal
   btn.addEventListener("click", function () {
-    console.log("just clicked on stats button classlist = " + btn.classList)
     updateStatsModal();
     modal.style.display = "block";
     helpEl = document.getElementById("stats-modal")
@@ -1478,7 +1345,6 @@ function initStatsModal() {
 
     // When the user clicks on stats info (i) show results
     resultsButton.addEventListener("click", function () {
-      console.log("just clicked on results button")
       resultsEl.style.display = "block";
       buildResults();
     });
@@ -1493,7 +1359,6 @@ function initStatsModal() {
 }
 
 function buildResults(){
-  console.log("entered build results")
   const resultsTrayEl = document.getElementById("results-tray")
 
 
@@ -1530,12 +1395,10 @@ return;
       }
 
       resultsArray = JSON.parse(window.localStorage.getItem('results'));
-      console.log("resultsArray =  " + resultsArray);
-      console.log("results array date = " + resultsArray[resultsArray.length-1].date)
       date = new Date(resultsArray[resultsArray.length-1].date);
       const year = date.getFullYear();
       const hours = date.getHours();
-      console.log("after getfullyear function year = " + year + " hours = " + hours)
+
       resultsTrayEl.innerHTML = ""
       let resultItemEl = document.createElement('div')
       resultItemEl.innerText = "Date"
@@ -1633,16 +1496,13 @@ for (i=0; i<categories.length; i++){
 }
 
 function calcTotalParentItems(parentCat, i){
-  console.log("total all of the children of " + parentCat)
   let childClass = (".child" + parentCat)
   const childEls = document.querySelectorAll(childClass)
-  console.log("lenght of children = " + childEls.length)
   let total = 0; 
   for (j=0; j<childEls.length; j++){
     if(protoWordsArray[i+j+1].sel){
   //    total = total + protoWordsArray[i+j+1].items.length;
       total = total + protoWordsArray[i+j+1].numOfItems;
-      console.log("total = " + total)
     }
   }
   const category = document.querySelector("."+parentCat)
@@ -1659,12 +1519,12 @@ function calcTotalParentItems(parentCat, i){
 function initCategoriesModal() {
   // Look for category preferences in localstorage
   // if found apply those values to the protoarray
-  console.log("add category local storage get logic")
+
   let categoryPreferencesTemp = JSON.parse(window.localStorage.getItem('categoryPreferences'));
 
   if (categoryPreferencesTemp) {
     categoryPreferences = JSON.parse(window.localStorage.getItem('categoryPreferences'))
-    console.log("prefernces = " + categoryPreferences)
+
     for (i=0; i<protoWordsArray.length; i++){
       protoWordsArray[i].sel = categoryPreferences[i]
       if (protoWordsArray[i].parent === "parent"){
@@ -1697,18 +1557,15 @@ function initCategoriesModal() {
     if (protoWordsArray[i].parent === "parent"){
       category.classList.add("parent")
       category.classList.add(protoWordsArray[i].cat)
-      console.log("parent")
-    }
+     }
     if (protoWordsArray[i].parent === "Music"){
       category.classList.add("child")
       category.classList.add("child")
       category.classList.add("childMusic")
-      console.log("child")
     }
     if (protoWordsArray[i].parent === "Sports"){
       category.classList.add("child")
       category.classList.add("childSports")
-      console.log("child")
     }    
     category.id = i;
     categoriesContainerEl.appendChild(category);
@@ -1729,7 +1586,6 @@ function initCategoriesModal() {
         }
         if (protoWordsArray[category.id].parent==="parent"){
           let children = document.querySelectorAll(".child"+protoWordsArray[category.id].cat)
-          console.log("category = " + protoWordsArray[category.id].cat)
           if (protoWordsArray[category.id].sel){
             for (l=0; l<children.length; l++){
               children[l].style.display = "block"
@@ -1745,16 +1601,6 @@ function initCategoriesModal() {
       });
   }
 
-  // When the user clicks on the button, open the modal
- /* console.log("right before categores button add event click listener")
-  btn.addEventListener("click", function () {
-    console.log("just clicked on categories button")
-    updateCategoriesModal();
-    const audio = new Audio ("./auds/stats.mp3");
-    audio.play()
-    modal.style.display = "block";
-    helpEl = document.getElementById("categories-modal")
-   });*/
 
   // When the user clicks on <span> (x), close the modal
   span.addEventListener("click", function () {
@@ -1775,9 +1621,7 @@ function initCategoriesModalBtn(){
     // When the user clicks on the button, open the modal
     const modal = document.getElementById("categories-modal");
     const btn = document.getElementById("categories");
-    console.log("right before categores button add event click listener")
     btn.addEventListener("click", function () {
-      console.log("just clicked on categories button")
       updateCategoriesModal();
       if (sound === "off" || sound === "up"){
       const audio = new Audio ("./auds/stats.mp3");
@@ -1790,10 +1634,7 @@ function initCategoriesModalBtn(){
 }
 
 function preserveCategories(){
-  console.log("add category local storage update logic in preserve function")
     for (i=0; i<protoWordsArray.length; i++){
-      console.log(protoWordsArray[i].sel)
-      console.log(categoryPreferences[i])
       categoryPreferences[i] = protoWordsArray[i].sel
     }
     window.localStorage.setItem('categoryPreferences', JSON.stringify(categoryPreferences));
@@ -1804,14 +1645,11 @@ function preserveCategories(){
 
 
 function revealLetter(){
-  console.log ("entered reveal letter function")
  // const currentWordArr = getCurrentWordArr()
 
   const numberOfGuessedWords = guessedWords.length;
   currentWordArr = guessedWords[numberOfGuessedWords - 1]
   let letter = wordle[revealLetterNum]
-  console.log('current array = ' + currentWordArr)
-  console.log("numofLetters = " + numofLetters )
     currentWordArr[revealLetterNum] = letter;
     //const availableSpaceEl = document.getElementById(revealLetterNum)
   //  availableSpaceEl.textContent = letter;
@@ -1825,7 +1663,6 @@ function initLook(){
       // Select background image based on portrait or landscape mode but first check for default
       const body = document.getElementsByTagName('body')[0];
       let backgroundImage  = JSON.parse(window.localStorage.getItem('background'));
-      console.log("background from localstorage = " + backgroundImage)
   //    window.localStorage.setItem('background', JSON.stringify(resultsArray));
       if (backgroundImage === "Random" || !backgroundImage){
         if (window.innerHeight > window.innerWidth){
@@ -1851,8 +1688,6 @@ function initAudio(){
 let icon = document.querySelector(".fa-volume-up");
 
 icon.onclick = function (){
-
-    console.log("classlist when clicked = " + icon.classList)
     if(icon.classList.contains("fa-volume-up")){
         icon.classList.replace("fa-volume-up", "fa-volume-off");
         sound = "off"
@@ -1874,7 +1709,6 @@ icon.onclick = function (){
 
 function music(){
   // June 11, 2023 make it a 3 way toggle  up-off-mute
-  console.log("entered music toggle")
 
   if (sound==="off" || sound==="mute"){
     if (soundPlayer){
@@ -1937,7 +1771,6 @@ for (i=0; i<6; i++){
 
   // When the user clicks on the button, open the modal
   btn.addEventListener("click", function () {
-    console.log("just clicked on preferences button")
     if (sound === "off" || sound === "up"){
     const audio = new Audio ("./auds/stats.mp3");
     audio.play()
@@ -1950,7 +1783,6 @@ for (i=0; i<6; i++){
   span.addEventListener("click", function () {
     modal.style.display = "none";
     maxCharEl = document.getElementById("max-char")
-    console.log("max-char value = " + maxCharEl.value + " max-char is " + typeof(maxCharEl.value))
     maxCharacters = Number(maxCharEl.value);
     if (maxCharacters < 5){
       maxCharacters = 5;
@@ -1958,7 +1790,6 @@ for (i=0; i<6; i++){
     }
     initCategories();
     initCategoriesModal();
-    console.log("maxCharacters converted to number = " + maxCharacters)
     window.localStorage.setItem("maxChars", Number(maxCharacters));
   });
 
@@ -1969,18 +1800,19 @@ for (i=0; i<6; i++){
     }
   });
 
+  /*
     // When the user clicks anywhere outside of the modal, close it
     textAreaEl.addEventListener("keydown", function (event) {
       var key = event.key;
       // If the user has pressed enter
       if (key === 'Enter') {
-        console.log("enter key pressed " + textAreaEl.value)
+ 
         const body = document.getElementsByTagName('body')[0];
         body.style.backgroundImage = "url(" + textAreaEl.value + ")"
         window.localStorage.setItem('background', JSON.stringify(textAreaEl.value));
       }
     });
-
+*/
 
     
     textAreaEl.addEventListener("selectionchange", function (event) {
@@ -1995,7 +1827,6 @@ for (i=0; i<6; i++){
 
     // When the user clicks on the random landscpape - randomly change the background
     rndLandscapeEl.addEventListener("click", function (event) {
-      console.log("add code to randomly change background")
       let randomImg = Math.floor(Math.random()*backgroundImagesLandscape.length)
       const body = document.getElementsByTagName('body')[0];
       body.style.backgroundImage = "url(" + backgroundImagesLandscape[randomImg] + ")"
@@ -2004,7 +1835,6 @@ for (i=0; i<6; i++){
 
         // When the user clicks on the random portrait - randomly change the background
         rndPortraitEl.addEventListener("click", function (event) {
-          console.log("add code to randomly change background")
           let randomImg = Math.floor(Math.random()*backgroundImagesLandscape.length)
           const body = document.getElementsByTagName('body')[0];
           body.style.backgroundImage = "url(" + backgroundImagesLandscape[randomImg] + ")"
@@ -2072,10 +1902,8 @@ function initBgAudios() {
 function initChameleon() {
 
   const chameleonEl = document.getElementById("chameleon")
-    console.log("entered initchameleon")
 
     chameleonEl.addEventListener("click", ({ target }) => {
-      console.log("clicked initchameleon")
         chameleon = !chameleon;
         if (chameleon){
           chameleonEl.style.color = 'black';
@@ -2098,17 +1926,14 @@ function initChameleon() {
 
   function initFreeSpaces() {
 
-    console.log("entered initFreeSpaces")
     let freeSpacesLit = window.localStorage.getItem("freeSpaces");
     if (freeSpacesLit === "true"){
       freeSpaces = true;
     } else {
       freeSpaces = false;
     }
-    console.log ("freeSpaces = " + freeSpaces + "type = " + typeof(freeSpaces))
     const freeSpaceEl = document.getElementById("free-space")
     if (freeSpaces){
-      console.log ("setting freeSpaces style to bold in initFreeSpaces")
       freeSpaceEl.style.color = 'black';
       freeSpaceEl.style.fontWeight = 'bold';
     } else {
@@ -2118,7 +1943,6 @@ function initChameleon() {
 
       
       freeSpaceEl.addEventListener("click", ({ target }) => {
-        console.log("clicked freeSpace")
           freeSpaces = !freeSpaces;
           window.localStorage.setItem("freeSpaces", freeSpaces);
           if (freeSpaces){
@@ -2153,7 +1977,6 @@ function danceTiles(tiles, firstLetterId){
       "animationend",
       () => {
         letterEl.classList.remove("dance")
-        console.log("removed dance class")
       },
       {once: true}
       )
@@ -2194,7 +2017,6 @@ function setColors(){
 
 function initCategories(){
   // PLACE THE NUMBER OF ITEMS FOR EACH CATEGORY THAT MEET OR EXCEED THE MAX CHARACTERS ALLOWED
-  console.log("Max characters = " + maxCharacters)
   // LOOP THRU EACH CATEGORY
   for(i=0; i<protoWordsArray.length; i++){
     let workcount = 0;
@@ -2207,14 +2029,12 @@ function initCategories(){
       }
     }
     protoWordsArray[i].numOfItems = workcount;
-    console.log("items for array " + protoWordsArray[i].cat + " equals " + workcount)
   } 
 
 
 }
 
 function preserveGameState(){
-  console.log("entered preserveGameState")
   window.localStorage.setItem('guessedWords', JSON.stringify(guessedWords));
   const keyboardContainer = document.getElementById('keyboard-container');
   window.localStorage.setItem("keyboardContainer", keyboardContainer.innerHTML);
@@ -2236,7 +2056,6 @@ function loadLocalStorage(){
    currentOrientation = "Portrait" 
   } 
   if (currentOrientation !== storedOrientation){
-    console.log ("about to resetgame state    storedOrientation = " + storedOrientation )
       resetGameState()
   }
   let kContainer = window.localStorage.getItem("keyboardContainer");
@@ -2261,7 +2080,6 @@ function loadLocalStorage(){
 
   guessedWordCount = Number(window.localStorage.getItem('guessedWordCount')) || guessedWordCount
   availableSpace = Number(window.localStorage.getItem('availableSpace')) || availableSpace
-  console.log("available space = " + availableSpace)
   guessedWords = JSON.parse(window.localStorage.getItem('guessedWords')) || guessedWords
   
 
@@ -2286,7 +2104,6 @@ function loadLocalStorage(){
 }
 
 function resetGameState(){
-  console.log("entered resetGameState")
   localStorage.removeItem('wordle')
   localStorage.removeItem('guessedWordCount')
   localStorage.removeItem('keyboardContainer')
@@ -2315,7 +2132,6 @@ function calcLettersandGuesses(){
 
     }
   }
-  console.log("calcing letters and guesses wordle = " + wordle +  " num of letters = " + numofLetters)
  // let guessedWordCount = 0;
   numofGuesses = 6;
   if (numofLetters > 10){
@@ -2328,14 +2144,11 @@ function calcLettersandGuesses(){
 
 
   function createSquares(){
-    console.log("entered createSquares")
     let screenWidth = window.innerWidth;
     if (screenWidth > 900){
       screenWidth = 900;
     }
     let screenHeight = window.innerHeight;
-
-    console.log ("createSquares  screenWidth = " + screenWidth + "  screenHeight = " + screenHeight);
 
     const gameBoard = document.getElementById("board")
 
@@ -2357,7 +2170,6 @@ function calcLettersandGuesses(){
     //  FROM HERE TO END OF FUNCTION ADDED BECAUSE NUMBER OF LETTERS IN WORDLE CAN VARY
     const board = document.getElementById("board")
     const square = document.querySelectorAll(".square")
-    console.log(square)
     square.forEach(square => {
       square.style.width = (screenWidth / (numofLetters + 4) + 'px');
       square.style.height = ((screenHeight / 15) + 'px');
@@ -2374,7 +2186,6 @@ function calcLettersandGuesses(){
   } // END OF createSquares 
 
   function showSpacesForFree(){
-    console.log ("add free space logic")
 
     let checkWordle = wordle;
     const guess = [];
@@ -2385,11 +2196,11 @@ function calcLettersandGuesses(){
     }
 
   
-    console.log("About to loop thru to look for Greens")
+   
     guess.forEach((guess, index) => {
-      console.log("guess letter = " + guess.letter + "   wordle letter = " + wordle[index])
+  
       if (guess.letter == wordle[index].toLowerCase()){
-        console.log ("free space")
+
         guess.color = 'free-space'
       }
     })
@@ -2436,4 +2247,49 @@ function initViewHelpModal() {
   });
 
 
+}
+
+
+
+
+function initLieDetectorModal() {
+
+
+  const modal = document.getElementById("lie-detector-modal");
+
+
+  // Get the <span> element that closes the modal 
+  const span = document.getElementById("close-lie-detector");
+
+
+  const preferencesContainerEl = document.getElementById("lie-detector-body")
+
+  // When the user clicks on <span> (x), close the modal
+  span.addEventListener("click", function () {
+    modal.style.display = "none";
+ //   clearInterval(intervalHandle);
+    imageEl2.classList.remove('rotate');
+  });
+
+    
+}
+
+
+function rotateSuspect(){
+
+/*
+    rotateDeg = rotateDeg + increment;
+    let deg = rotateDeg;
+    console.log("rotateDeg = " + rotateDeg)
+    console.log("innerwidth = " + window.innerWidth)
+    if (rotateDeg === 65){
+      increment = -1;
+    }
+    if (rotateDeg === -65){
+      increment = 1;
+    }
+
+    console.log("degree = " + deg)
+      imageEl.style.transform = `rotateY(${deg}deg)`
+*/
 }
